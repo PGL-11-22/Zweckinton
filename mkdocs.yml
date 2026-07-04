@@ -1,0 +1,52 @@
+site_name: PGL Knowledge Base
+site_description: Личная математико-инженерная база знаний
+site_author: PGL
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.instant
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+  palette:
+    - scheme: slate
+      primary: black
+      accent: blue
+
+nav:
+  - Главная: index.md
+  - Математика:
+      - Обзор: math/index.md
+  - Программирование:
+      - Обзор: programming/index.md
+  - Задачи:
+      - Обзор: problems/index.md
+  - Проекты:
+      - Обзор: projects/index.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
