@@ -1,6 +1,6 @@
-site_name: PGL Knowledge Base
-site_description: Личная математико-инженерная база знаний
-site_author: PGL
+site_name: Герману нехуй делать
+site_description: Сборник конспектов, работ и проектов
+site_author: Ямщиков Герман М3233
 
 theme:
   name: material
@@ -27,10 +27,10 @@ nav:
       - Обзор: math/index.md
   - Программирование:
       - Обзор: programming/index.md
-  - Задачи:
-      - Обзор: problems/index.md
   - Проекты:
       - Обзор: projects/index.md
+  - Физика:
+      - Обзор: physics/index.md
 
 markdown_extensions:
   - admonition
