@@ -1,0 +1,180 @@
+\selectlanguage *{russian}
+\contentsline {chapter}{Гл. 1-6 + 10 покрывют курс Д.Штукенберга "Математическая логика"}{6}{chapter*.1}%
+\contentsline {chapter}{\numberline {1}Формальные языки}{7}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Формализация математики}{7}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Язык и метаязык}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Синтаксис формул}{7}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Термы и подстановки}{7}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Свободные и связанные переменные}{7}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Формальные теории}{7}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Задачник к главе}{7}{section.1.7}%
+\contentsline {chapter}{\numberline {2}Пропозициональная логика}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Исчисление высказываний}{8}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Семантика и таблицы истинности}{8}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Аксиоматические системы}{8}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Теорема о дедукции}{8}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Корректность}{8}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Полнота}{8}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Задачник к главе}{8}{section.2.7}%
+\contentsline {chapter}{\numberline {3}Логика первого порядка}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Предикаты и кванторы}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Язык первого порядка}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Семантика первого порядка}{9}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Формальные выводы}{9}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Полнота Гёделя}{9}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Компактность}{9}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Теорема Лёвенгейма--Сколема}{9}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Задачник к главе}{9}{section.3.8}%
+\contentsline {chapter}{\numberline {4}Формальная арифметика}{10}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Арифметика Робинсона}{10}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Арифметика Пеано}{10}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Представимые функции}{10}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Гёделева нумерация}{10}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Диагональный метод}{10}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Задачник к главе}{10}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Границы формальных систем}{11}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Первая теорема Гёделя}{11}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Вторая теорема Гёделя}{11}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Теорема Тарского}{11}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Теорема Черча}{11}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Нестандартная арифметика}{11}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Задачник к главе}{11}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Теория доказательств}{12}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Гильбертовы системы}{12}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Натуральный вывод}{12}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Секвенциальное исчисление}{12}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Устранимость сечения}{12}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Нормализация}{12}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Конструктивная логика}{12}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Интуиционистская логика}{12}{section.6.7}%
+\contentsline {section}{\numberline {6.8}Семантика Крипке}{12}{section.6.8}%
+\contentsline {section}{\numberline {6.9}Задачник к главе}{12}{section.6.9}%
+\contentsline {chapter}{Глава 7 покрывает курс Р.Попкова "Между алгеброй и логикой"}{13}{chapter*.2}%
+\contentsline {chapter}{\numberline {7}Теория моделей}{14}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Основы теории моделей}{14}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Язык (Сигнатура)}{14}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}$L$-структуры}{14}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Примеры}{15}{subsection.7.1.3}%
+\contentsline {subsubsection}{\numberline {7.1.3.1}Кольца}{15}{subsubsection.7.1.3.1}%
+\contentsline {subsubsection}{\numberline {7.1.3.2}Порядок}{16}{subsubsection.7.1.3.2}%
+\contentsline {subsubsection}{\numberline {7.1.3.3}Группы}{16}{subsubsection.7.1.3.3}%
+\contentsline {subsection}{\numberline {7.1.4}Операции над языками и мощностями}{16}{subsection.7.1.4}%
+\contentsline {subsubsection}{\numberline {7.1.4.1}Обогащение и обеднение}{16}{subsubsection.7.1.4.1}%
+\contentsline {subsection}{\numberline {7.1.5}Пример произвольной структуры}{17}{subsection.7.1.5}%
+\contentsline {subsection}{\numberline {7.1.6}Вложения}{17}{subsection.7.1.6}%
+\contentsline {subsection}{\numberline {7.1.7}Термы}{19}{subsection.7.1.7}%
+\contentsline {subsubsection}{\numberline {7.1.7.1}Индуктивное определение терма языка $L$}{20}{subsubsection.7.1.7.1}%
+\contentsline {subsection}{\numberline {7.1.8}Интерпретация термов}{20}{subsection.7.1.8}%
+\contentsline {subsection}{\numberline {7.1.9}Истинность формул в структуре}{21}{subsection.7.1.9}%
+\contentsline {subsubsection}{\numberline {7.1.9.1}Условия истинности}{23}{subsubsection.7.1.9.1}%
+\contentsline {subsection}{\numberline {7.1.10} Синтаксические сокращения}{29}{subsection.7.1.10}%
+\contentsline {section}{\numberline {7.2}Определимые множества}{30}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Пример: конечный порядок элемента группы}{34}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Операции над определимыми множествами}{35}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Определимые функции}{37}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4}Автоморфизмы, параметры и определимые множества}{39}{subsection.7.2.4}%
+\contentsline {subsection}{\numberline {7.2.5}Ограниченность метода автоморфизмов}{46}{subsection.7.2.5}%
+\contentsline {subsection}{\numberline {7.2.6}Бескванторные, экзистенциальные и универсальные формулы}{50}{subsection.7.2.6}%
+\contentsline {subsection}{\numberline {7.2.7}Сохранение формул при переходе к подструктурам}{51}{subsection.7.2.7}%
+\contentsline {subsection}{\numberline {7.2.8}Теории структур и дедуктивная замкнутость}{57}{subsection.7.2.8}%
+\contentsline {subsection}{\numberline {7.2.9}Полные теории}{60}{subsection.7.2.9}%
+\contentsline {subsection}{\numberline {7.2.10}Истинная арифметика и арифметика Пеано}{61}{subsection.7.2.10}%
+\contentsline {section}{\numberline {7.3}Алгебраически замкнутые поля и упорядоченные поля}{64}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Алгебраически замкнутые поля}{65}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Упорядоченные поля}{66}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Полные упорядоченные поля}{68}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.4}Архимедовость}{70}{subsection.7.3.4}%
+\contentsline {subsection}{\numberline {7.3.5}Единственность полного упорядоченного поля}{72}{subsection.7.3.5}%
+\contentsline {subsection}{\numberline {7.3.6}Конечная выполнимость}{72}{subsection.7.3.6}%
+\contentsline {subsection}{\numberline {7.3.7}Алгебраические замыкания полей}{74}{subsection.7.3.7}%
+\contentsline {section}{\numberline {7.4}Фильтры}{76}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Идея фильтра}{76}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Фильтры и сходимость последовательностей}{78}{subsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.4.3}Примеры фильтров}{81}{subsection.7.4.3}%
+\contentsline {subsection}{\numberline {7.4.4}Ультрафильтры}{83}{subsection.7.4.4}%
+\contentsline {subsection}{\numberline {7.4.5}Максимальные фильтры}{85}{subsection.7.4.5}%
+\contentsline {section}{\numberline {7.5}Ультрапроизведения}{98}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Идея ультрапроизведения}{98}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}Прямое произведение носителей}{99}{subsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.5.3}Отношение эквивалентности по ультрафильтру}{99}{subsection.7.5.3}%
+\contentsline {subsection}{\numberline {7.5.4}Носитель ультрапроизведения}{102}{subsection.7.5.4}%
+\contentsline {subsection}{\numberline {7.5.5}Интерпретация констант}{102}{subsection.7.5.5}%
+\contentsline {subsection}{\numberline {7.5.6}Интерпретация функциональных символов и её корректность}{103}{subsection.7.5.6}%
+\contentsline {subsubsection}{\numberline {7.5.6.1}Корректность интерпретации функциональных символов}{104}{subsubsection.7.5.6.1}%
+\contentsline {subsection}{\numberline {7.5.7}Интерпретация предикатных символов и её корректность}{105}{subsection.7.5.7}%
+\contentsline {subsection}{\numberline {7.5.8}Корректность интерпретации предикатных символов}{106}{subsection.7.5.8}%
+\contentsline {subsection}{\numberline {7.5.9}Итоговое определение ультрапроизведения}{108}{subsection.7.5.9}%
+\contentsline {subsection}{\numberline {7.5.10}Теорема Лося}{111}{subsection.7.5.10}%
+\contentsline {section}{\numberline {7.6}Компактность и нестандартные модели}{119}{section.7.6}%
+\contentsline {subsection}{\numberline {7.6.1}Компактность для семантического следования}{120}{subsection.7.6.1}%
+\contentsline {subsection}{\numberline {7.6.2}Нестандартные модели истинной арифметики}{124}{subsection.7.6.2}%
+\contentsline {subsection}{\numberline {7.6.3}Нестандартные бесконечно малые элементы}{128}{subsection.7.6.3}%
+\contentsline {subsection}{\numberline {7.6.4}Элементарно эквивалентные неизоморфные модели}{129}{subsection.7.6.4}%
+\contentsline {subsection}{\numberline {7.6.5}Аксиоматизируемые классы и конечные модели}{134}{subsection.7.6.5}%
+\contentsline {subsection}{\numberline {7.6.6}Примеры аксиоматизируемых классов}{135}{subsection.7.6.6}%
+\contentsline {subsection}{\numberline {7.6.7}Бесконечные и конечные модели}{136}{subsection.7.6.7}%
+\contentsline {subsection}{\numberline {7.6.8}Компактностная лемма о больших конечных моделях}{138}{subsection.7.6.8}%
+\contentsline {subsection}{\numberline {7.6.9}n-кручения и периодические абелевы группы}{140}{subsection.7.6.9}%
+\contentsline {subsubsection}{\numberline {7.6.9.1}Неаксиоматизируемость класса периодических абелевых групп}{143}{subsubsection.7.6.9.1}%
+\contentsline {subsection}{\numberline {7.6.10}Конечная аксиоматизируемость и дополнения классов}{146}{subsection.7.6.10}%
+\contentsline {subsubsection}{\numberline {7.6.10.1}Лемма о конечном фрагменте аксиоматизации}{147}{subsubsection.7.6.10.1}%
+\contentsline {subsubsection}{\numberline {7.6.10.2}Аксиоматизируемость дополнения класса}{150}{subsubsection.7.6.10.2}%
+\contentsline {section}{\numberline {7.7}Элементарные подструктуры и диаграммы}{154}{section.7.7}%
+\contentsline {subsection}{\numberline {7.7.1}Элементарные подструктуры}{154}{subsection.7.7.1}%
+\contentsline {subsection}{\numberline {7.7.2}Элементарные вложения}{156}{subsection.7.7.2}%
+\contentsline {subsection}{\numberline {7.7.3}Диаграммы}{157}{subsection.7.7.3}%
+\contentsline {subsection}{\numberline {7.7.4}Атомарная диаграмма}{162}{subsection.7.7.4}%
+\contentsline {subsection}{\numberline {7.7.5}Теорема Лёвенгейма--Сколема о подъёме}{164}{subsection.7.7.5}%
+\contentsline {subsection}{\numberline {7.7.6}Нестандартные натуральные числа и простые элементы}{169}{subsection.7.7.6}%
+\contentsline {subsection}{\numberline {7.7.7}Элемент с бесконечно многими простыми делителями}{173}{subsection.7.7.7}%
+\contentsline {subsection}{\numberline {7.7.8}Нестандартная пара простых близнецов}{175}{subsection.7.7.8}%
+\contentsline {section}{\numberline {7.8}Категоричность}{178}{section.7.8}%
+\contentsline {subsection}{\numberline {7.8.1}Категоричность и К-категоричность теории}{178}{subsection.7.8.1}%
+\contentsline {subsection}{\numberline {7.8.2}Бесконечномерные векторные пространства}{179}{subsection.7.8.2}%
+\contentsline {subsubsection}{\numberline {7.8.2.1}Классификация моделей по размерности}{180}{subsubsection.7.8.2.1}%
+\contentsline {subsubsection}{\numberline {7.8.2.2}Мощность бесконечномерного векторного пространства}{181}{subsubsection.7.8.2.2}%
+\contentsline {subsection}{\numberline {7.8.3}Категоричность бесконечномерных векторных пространств}{181}{subsection.7.8.3}%
+\contentsline {subsubsection}{\numberline {7.8.3.1}Связь с полнотой}{182}{subsubsection.7.8.3.1}%
+\contentsline {section}{\numberline {7.9}Исключение кванторов}{183}{section.7.9}%
+\contentsline {section}{\numberline {7.10}Насыщенные модели}{183}{section.7.10}%
+\contentsline {section}{\numberline {7.11}Устойчивость}{184}{section.7.11}%
+\contentsline {section}{\numberline {7.12}Задачник по теории моделей}{184}{section.7.12}%
+\contentsline {subsection}{\numberline {7.12.1}Блок 1. Основы теории моделей}{184}{subsection.7.12.1}%
+\contentsline {subsubsection}{Задача №1}{184}{subsection.7.12.1}%
+\contentsline {subsubsection}{Задача №2}{188}{Item.29}%
+\contentsline {subsubsection}{Задача №3}{190}{Item.33}%
+\contentsline {subsubsection}{Задача №4}{191}{Item.33}%
+\contentsline {subsubsection}{Задача №5}{193}{Item.33}%
+\contentsline {subsubsection}{Задача №6}{194}{Item.33}%
+\contentsline {chapter}{Глава 8 покрывает курс А.Станкевича "Дискретная математика s4 вторая половина"}{196}{chapter*.3}%
+\contentsline {chapter}{\numberline {8}Теория вычислимости}{197}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Понятие алгоритма}{197}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Частично-рекурсивные функции}{197}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Машины Тьюринга}{197}{section.8.3}%
+\contentsline {section}{\numberline {8.4}$\lambda $-исчисление}{197}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Тезис Черча--Тьюринга}{197}{section.8.5}%
+\contentsline {section}{\numberline {8.6}Разрешимые множества}{197}{section.8.6}%
+\contentsline {section}{\numberline {8.7}Перечислимые множества}{197}{section.8.7}%
+\contentsline {section}{\numberline {8.8}Неразрешимые задачи}{197}{section.8.8}%
+\contentsline {section}{\numberline {8.9}Теорема Райса}{197}{section.8.9}%
+\contentsline {section}{\numberline {8.10}Арифметическая иерархия}{197}{section.8.10}%
+\contentsline {section}{\numberline {8.11}Задачник к главе}{197}{section.8.11}%
+\contentsline {chapter}{Глава 9 покрывает курс Д.Штукенберга "Теория типов"}{198}{chapter*.4}%
+\contentsline {chapter}{\numberline {9}Теория типов}{199}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Простая теория типов}{199}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Типизированное $\lambda $-исчисление}{199}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Система F}{199}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Зависимые типы}{199}{section.9.4}%
+\contentsline {section}{\numberline {9.5}Изоморфизм Карри--Ховарда}{199}{section.9.5}%
+\contentsline {section}{\numberline {9.6}Типы как доказательства}{199}{section.9.6}%
+\contentsline {section}{\numberline {9.7}Конструктивные основания математики}{199}{section.9.7}%
+\contentsline {section}{\numberline {9.8}Coq, Agda и Lean}{199}{section.9.8}%
+\contentsline {section}{\numberline {9.9}Задачник к главе}{199}{section.9.9}%
+\contentsline {chapter}{\numberline {10}Основания математики}{200}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Логицизм}{200}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Формализм Гильберта}{200}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Интуиционизм Брауэра}{200}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Теоретико-множественные основания}{200}{section.10.4}%
+\contentsline {section}{\numberline {10.5}Категориальные основания}{200}{section.10.5}%
+\contentsline {section}{\numberline {10.6}Унивалентные основания}{200}{section.10.6}%
+\contentsline {section}{\numberline {10.7}Задачник к главе}{200}{section.10.7}%
