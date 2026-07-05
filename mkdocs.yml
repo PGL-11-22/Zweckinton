@@ -11,7 +11,6 @@ theme:
     - navigation.expand
     - navigation.top
     - navigation.instant
-    - toc.integrate
     - search.suggest
     - search.highlight
     - content.code.copy
@@ -23,14 +22,24 @@ theme:
 
 nav:
   - Главная: index.md
+
   - Математика:
       - Обзор: math/index.md
-  - Программирование:
-      - Обзор: programming/index.md
-  - Проекты:
-      - Обзор: projects/index.md
+
   - Физика:
       - Обзор: physics/index.md
+
+  - Алгоритмы:
+      - Обзор: algo/index.md
+
+  - Программирование:
+      - Обзор: programming/index.md
+
+  - Проекты:
+      - Обзор: projects/index.md
+
+  - Интересы:
+      - Обзор: interests/index.md
 
 markdown_extensions:
   - admonition
@@ -40,13 +49,19 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.details
   - pymdownx.tabbed:
       alternate_style: true
+
   - pymdownx.arithmatex:
       generic: true
+
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

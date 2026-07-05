@@ -1,4 +1,4 @@
-# Герману нехуй делать
+# Ямщиков Герман М3\*33
 
 Сборник конспеков, работ, проектов и идей
 
@@ -8,7 +8,7 @@
 
 <div class="grid cards" markdown>
 
-- :material-function-variant:{ .lg .middle } **Математика**
+- :material-function-variant: **Математика**
 
   ***
 
@@ -16,19 +16,31 @@
 
   [:octicons-arrow-right-24: Перейти](math/)
 
-- :material-code-braces:{ .lg .middle } **Программирование**
+- :material-atom: **Физика**
 
   ***
 
-  Rust, C/C++, алгоритмы, системное программирование, архитектура ПО.
+  Механика, электродинамика, квантовая теория, математическая физика.
+
+  [:octicons-arrow-right-24: Перейти](physics/)
+
+- :material-graph-outline: **Алгоритмы**
+
+  ***
+
+  Структуры данных, графы, динамическое программирование, сложность.
+
+  [:octicons-arrow-right-24: Перейти](algo/)
+
+- :material-code-braces: **Программирование**
+
+  ***
+
+  Rust, C/C++, системное программирование, архитектура ПО.
 
   [:octicons-arrow-right-24: Перейти](programming/)
 
-- :material-sword-cross:{ .lg .middle } **Задачи**
-
-  ***
-
-- :material-cube-outline:{ .lg .middle } **Проекты**
+- :material-cube-outline: **Проекты**
 
   ***
 
@@ -36,11 +48,14 @@
 
   [:octicons-arrow-right-24: Перейти](projects/)
 
+- :material-compass-outline: **Интересы**
+
+  ***
+
+  Направления, идеи, планы изучения, открытые вопросы и личные треки.
+
+  [:octicons-arrow-right-24: Перейти](interests/)
+
 </div>
 
 ---
-
-## Статус
-
-!!! note "Идея проекта"
-Это не просто репозиторий, а личный портал знаний: Git хранит историю, а сайт предоставляет удобную навигацию.
