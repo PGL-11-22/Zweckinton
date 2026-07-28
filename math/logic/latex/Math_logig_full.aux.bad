@@ -1,0 +1,153 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand*\HyPL@Entry[1]{}
+\catcode `"\active 
+\HyPL@Entry{0<</S/D>>}
+\selectlanguage *{russian}
+\@writefile{toc}{\selectlanguage *{russian}}
+\@writefile{lof}{\selectlanguage *{russian}}
+\@writefile{lot}{\selectlanguage *{russian}}
+\HyPL@Entry{1<</S/D>>}
+\@writefile{toc}{\contentsline {chapter}{Гл. 1-6 + 10 покрывют курс Д.Штукенберга "Математическая логика"}{5}{chapter*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}Исчисление высказываний}{6}{chapter.1}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Классичекское исчисление высказываний}{8}{section.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.2}Интуицинистическое исчисление высказываний}{8}{section.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.3}Модели Крипке}{8}{section.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.4}Решетки и Алгебры }{8}{section.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.5}Формальные теории}{8}{section.1.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Теории певого порядка}{9}{chapter.2}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Свободные вхождения}{9}{section.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Машина Тьюринга}{9}{section.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Арифметика Пеано}{9}{section.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Формальная арифметика}{9}{section.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Арифметизация логики}{9}{section.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}Задачник к главе}{9}{section.2.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Исчисление предикатов}{10}{chapter.3}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Категоричесские силлогизмы}{10}{section.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Оценка}{10}{section.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}теоремы Гёделя}{10}{section.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Теорема Тарского}{10}{section.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Задачник к главе}{10}{section.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Теория множеств}{11}{chapter.4}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{Глава 7 покрывает курс Р.Попкова "Между алгеброй и логикой"}{12}{chapter*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Теория моделей}{13}{chapter.5}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Основы теории моделей}{13}{section.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Язык (Сигнатура)}{13}{subsection.5.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}$L$-структуры}{13}{subsection.5.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.3}Примеры}{14}{subsection.5.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.3.1}Кольца}{14}{subsubsection.5.1.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.3.2}Порядок}{15}{subsubsection.5.1.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.3.3}Группы}{15}{subsubsection.5.1.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.4}Операции над языками и мощностями}{15}{subsection.5.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.4.1}Обогащение и обеднение}{15}{subsubsection.5.1.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.5}Пример произвольной структуры}{16}{subsection.5.1.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.6}Вложения}{16}{subsection.5.1.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.7}Термы}{18}{subsection.5.1.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.7.1}Индуктивное определение терма языка $L$}{19}{subsubsection.5.1.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.8}Интерпретация термов}{19}{subsection.5.1.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.9}Истинность формул в структуре}{20}{subsection.5.1.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.9.1}Условия истинности}{22}{subsubsection.5.1.9.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.10} Синтаксические сокращения}{29}{subsection.5.1.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Определимые множества}{30}{section.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Пример: конечный порядок элемента группы}{33}{subsection.5.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Операции над определимыми множествами}{34}{subsection.5.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Определимые функции}{36}{subsection.5.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.4}Автоморфизмы, параметры и определимые множества}{39}{subsection.5.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.5}Ограниченность метода автоморфизмов}{46}{subsection.5.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.6}Бескванторные, экзистенциальные и универсальные формулы}{50}{subsection.5.2.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.7}Сохранение формул при переходе к подструктурам}{51}{subsection.5.2.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.8}Теории структур и дедуктивная замкнутость}{57}{subsection.5.2.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.9}Полные теории}{60}{subsection.5.2.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.10}Истинная арифметика и арифметика Пеано}{61}{subsection.5.2.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Алгебраически замкнутые поля и упорядоченные поля}{64}{section.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Алгебраически замкнутые поля}{65}{subsection.5.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Упорядоченные поля}{66}{subsection.5.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Полные упорядоченные поля}{69}{subsection.5.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.4}Архимедовость}{71}{subsection.5.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.5}Единственность полного упорядоченного поля}{72}{subsection.5.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.6}Конечная выполнимость}{73}{subsection.5.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.7}Алгебраические замыкания полей}{74}{subsection.5.3.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Фильтры}{76}{section.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Идея фильтра}{76}{subsection.5.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.2}Фильтры и сходимость последовательностей}{79}{subsection.5.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.3}Примеры фильтров}{81}{subsection.5.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.4}Ультрафильтры}{83}{subsection.5.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.5}Максимальные фильтры}{86}{subsection.5.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Ультрапроизведения}{99}{section.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Идея ультрапроизведения}{99}{subsection.5.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}Прямое произведение носителей}{99}{subsection.5.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.3}Отношение эквивалентности по ультрафильтру}{100}{subsection.5.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.4}Носитель ультрапроизведения}{103}{subsection.5.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.5}Интерпретация констант}{103}{subsection.5.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.6}Интерпретация функциональных символов и её корректность}{104}{subsection.5.5.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.6.1}Корректность интерпретации функциональных символов}{105}{subsubsection.5.5.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.7}Интерпретация предикатных символов и её корректность}{106}{subsection.5.5.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.8}Корректность интерпретации предикатных символов}{107}{subsection.5.5.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.9}Итоговое определение ультрапроизведения}{109}{subsection.5.5.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.10}Теорема Лося}{112}{subsection.5.5.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}Компактность и нестандартные модели}{121}{section.5.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.1}Компактность для семантического следования}{121}{subsection.5.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.2}Нестандартные модели истинной арифметики}{125}{subsection.5.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.3}Нестандартные бесконечно малые элементы}{129}{subsection.5.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.4}Элементарно эквивалентные неизоморфные модели}{130}{subsection.5.6.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.5}Аксиоматизируемые классы и конечные модели}{135}{subsection.5.6.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.6}Примеры аксиоматизируемых классов}{136}{subsection.5.6.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.7}Бесконечные и конечные модели}{137}{subsection.5.6.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.8}Компактностная лемма о больших конечных моделях}{139}{subsection.5.6.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.9}n-кручения и периодические абелевы группы}{141}{subsection.5.6.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.6.9.1}Неаксиоматизируемость класса периодических абелевых групп}{144}{subsubsection.5.6.9.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.10}Конечная аксиоматизируемость и дополнения классов}{147}{subsection.5.6.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.6.10.1}Лемма о конечном фрагменте аксиоматизации}{148}{subsubsection.5.6.10.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.6.10.2}Аксиоматизируемость дополнения класса}{152}{subsubsection.5.6.10.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.7}Элементарные подструктуры и диаграммы}{155}{section.5.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7.1}Элементарные подструктуры}{155}{subsection.5.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7.2}Элементарные вложения}{158}{subsection.5.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7.3}Диаграммы}{159}{subsection.5.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7.4}Атомарная диаграмма}{163}{subsection.5.7.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7.5}Теорема Лёвенгейма--Сколема о подъёме}{165}{subsection.5.7.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7.6}Нестандартные натуральные числа и простые элементы}{172}{subsection.5.7.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7.7}Элемент с бесконечно многими простыми делителями}{175}{subsection.5.7.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7.8}Нестандартная пара простых близнецов}{177}{subsection.5.7.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.8}Категоричность}{180}{section.5.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.8.1}Категоричность и К-категоричность теории}{180}{subsection.5.8.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.8.2}Бесконечномерные векторные пространства}{181}{subsection.5.8.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.8.2.1}Классификация моделей по размерности}{182}{subsubsection.5.8.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.8.2.2}Мощность бесконечномерного векторного пространства}{183}{subsubsection.5.8.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.8.3}Категоричность бесконечномерных векторных пространств}{183}{subsection.5.8.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.8.3.1}Связь с полнотой}{184}{subsubsection.5.8.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.9}Исключение кванторов}{186}{section.5.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.10}Насыщенные модели}{186}{section.5.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.11}Устойчивость}{186}{section.5.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.12}Задачник по теории моделей}{186}{section.5.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.12.1}Блок 1. Основы теории моделей}{186}{subsection.5.12.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Задача №1}{186}{subsection.5.12.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Задача №2}{191}{Item.33}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Задача №3}{192}{Item.37}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Задача №4}{194}{Item.37}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Задача №5}{195}{Item.37}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Задача №6}{196}{Item.37}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{Глава 8 покрывает курс А.Станкевича "Дискретная математика s4 вторая половина"}{198}{chapter*.3}\protecte
