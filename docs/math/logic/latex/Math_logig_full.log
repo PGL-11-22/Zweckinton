@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2026.1.31)  28 JUL 2026 18:40
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2026.1.31)  30 JUL 2026 15:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -637,6 +637,297 @@ rs
 \c@corollary=\count308
 \c@remark=\count309
 
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks34
+\pgfutil@tempdima=\dimen176
+\pgfutil@tempdimb=\dimen177
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box57
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 107.
+)
+\Gin@req@height=\dimen178
+\Gin@req@width=\dimen179
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks35
+\pgfkeys@temptoks=\toks36
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks37
+))
+\pgf@x=\dimen180
+\pgf@y=\dimen181
+\pgf@xa=\dimen182
+\pgf@ya=\dimen183
+\pgf@xb=\dimen184
+\pgf@yb=\dimen185
+\pgf@xc=\dimen186
+\pgf@yc=\dimen187
+\pgf@xd=\dimen188
+\pgf@yd=\dimen189
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count310
+\c@pgf@countb=\count311
+\c@pgf@countc=\count312
+\c@pgf@countd=\count313
+\t@pgf@toka=\toks38
+\t@pgf@tokb=\toks39
+\t@pgf@tokc=\toks40
+\pgf@sys@id@count=\count314
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)
+\pgfsys@objnum=\count315
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count316
+\pgfsyssoftpath@bigbuffer@items=\count317
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen190
+\pgfmath@count=\count318
+\pgfmath@box=\box58
+\pgfmath@toks=\toks41
+\pgfmath@stack@operand=\toks42
+\pgfmath@stack@operation=\toks43
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count319
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen191
+\pgf@picmaxx=\dimen192
+\pgf@picminy=\dimen193
+\pgf@picmaxy=\dimen194
+\pgf@pathminx=\dimen195
+\pgf@pathmaxx=\dimen196
+\pgf@pathminy=\dimen197
+\pgf@pathmaxy=\dimen198
+\pgf@xx=\dimen199
+\pgf@xy=\dimen256
+\pgf@yx=\dimen257
+\pgf@yy=\dimen258
+\pgf@zx=\dimen259
+\pgf@zy=\dimen260
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen261
+\pgf@path@lasty=\dimen262
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen263
+\pgf@shorten@start@additional=\dimen264
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box59
+\pgf@hbox=\box60
+\pgf@layerbox@main=\box61
+\pgf@picture@serial@count=\count320
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen265
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen266
+\pgf@pt@y=\dimen267
+\pgf@pt@temp=\dimen268
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen269
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen270
+\pgf@sys@shading@range@num=\count321
+\pgf@shadingcount=\count322
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box62
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box63
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen271
+\pgf@nodesepend=\dimen272
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen273
+\pgffor@skip=\dimen274
+\pgffor@stack=\toks44
+\pgffor@toks=\toks45
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count323
+\pgfplotmarksize=\dimen275
+)
+\tikz@lastx=\dimen276
+\tikz@lasty=\dimen277
+\tikz@lastxsaved=\dimen278
+\tikz@lastysaved=\dimen279
+\tikz@lastmovetox=\dimen280
+\tikz@lastmovetoy=\dimen281
+\tikzleveldistance=\dimen282
+\tikzsiblingdistance=\dimen283
+\tikz@figbox=\box64
+\tikz@figbox@bg=\box65
+\tikz@tempbox=\box66
+\tikz@tempbox@bg=\box67
+\tikztreelevel=\count324
+\tikznumberofchildren=\count325
+\tikznumberofcurrentchild=\count326
+\tikz@fig@count=\count327
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count328
+\pgfmatrixcurrentcolumn=\count329
+\pgf@matrix@numberofcolumns=\count330
+)
+\tikz@expandcount=\count331
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
 
@@ -675,9 +966,9 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen176
-\Hy@linkcounter=\count310
-\Hy@pagecounter=\count311
+\@linkdim=\dimen284
+\Hy@linkcounter=\count332
+\Hy@pagecounter=\count333
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
@@ -692,7 +983,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count312
+\Hy@SavedSpaceFactor=\count334
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
@@ -705,14 +996,14 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count313
+\c@Hy@tempcnt=\count335
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen177
+\XeTeXLinkMargin=\dimen285
 
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -721,9 +1012,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count314
-\Field@Width=\dimen178
-\Fld@charsize=\dimen179
+\Fld@menulength=\count336
+\Field@Width=\dimen286
+\Fld@charsize=\dimen287
 Package hyperref Info: Hyper figures OFF on input line 6076.
 Package hyperref Info: Link nesting OFF on input line 6081.
 Package hyperref Info: Hyper index ON on input line 6084.
@@ -738,9 +1029,9 @@ LaTeX Info: Redefining \pageref on input line 6150.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count315
-\c@Item=\count316
-\c@Hfootnote=\count317
+\Hy@abspage=\count337
+\c@Item=\count338
+\c@Hfootnote=\count339
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 
@@ -751,11 +1042,11 @@ File: hxetex.def 2021-06-07 v7.00m Hyperref driver for XeTeX
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\pdfm@box=\box57
-\c@Hy@AnnotLevel=\count318
-\HyField@AnnotCount=\count319
-\Fld@listcount=\count320
-\c@bookmark@seq@number=\count321
+\pdfm@box=\box68
+\c@Hy@AnnotLevel=\count340
+\HyField@AnnotCount=\count341
+\Fld@listcount=\count342
+\c@bookmark@seq@number=\count343
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -773,7 +1064,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip105
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 158.
+Package hyperref Info: Option `colorlinks' set `true' on input line 157.
 
 (./Math_logig_full.aux
 LaTeX Info: Redefining \rmfamily on input line 20.
@@ -808,116 +1099,100 @@ LaTeX Font Info:    Font shape `TU/DejaVuSerif(1)/m/n' will be
 )
 \openout1 = `Math_logig_full.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 160.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 159.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-60.
+59.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 160.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 160.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 160.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 160.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 160.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 160.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 160.
-LaTeX Font Info:    Redeclaring math accent \check on input line 160.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 160.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 160.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 160.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 160.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 160.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 159.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 159.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 159.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 159.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 159.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 159.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 159.
+LaTeX Font Info:    Redeclaring math accent \check on input line 159.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 159.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 159.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 159.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 159.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 159.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 159.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 159.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 159.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 159.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 159.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 159.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 159.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 159.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 159.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 159.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 159.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 160.
+(Font)              `operators' in the math version `normal' on input line 159.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/DejaVuSerif(0)/m/n on input line 160
+(Font)                  OT1/cmr/m/n --> TU/DejaVuSerif(0)/m/n on input line 159
 .
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 160.
+(Font)              `operators' in the math version `bold' on input line 159.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/DejaVuSerif(0)/m/n on input line 16
-0.
+(Font)                  OT1/cmr/bx/n --> TU/DejaVuSerif(0)/m/n on input line 15
+9.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/DejaVuSerif(0)/m/n --> TU/DejaVuSerif(0)/m/n on inpu
-t line 160.
+t line 159.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/DejaVuSerif(0)/m/it on input line 1
-60.
+59.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/DejaVuSerif(0)/b/n on input line 16
-0.
+(Font)                  OT1/cmr/bx/n --> TU/DejaVuSerif(0)/b/n on input line 15
+9.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/DejaVuSans(0)/m/n on input line 160
+(Font)                  OT1/cmss/m/n --> TU/DejaVuSans(0)/m/n on input line 159
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> TU/DejaVuSansMono(0)/m/n on input line
- 160.
+ 159.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/DejaVuSerif(0)/m/n --> TU/DejaVuSerif(0)/b/n on inpu
-t line 160.
+t line 159.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/DejaVuSerif(0)/b/it on input line 
-160.
+159.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/DejaVuSans(0)/b/n on input line 16
-0.
+(Font)                  OT1/cmss/bx/n --> TU/DejaVuSans(0)/b/n on input line 15
+9.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/DejaVuSansMono(0)/b/n on input line
- 160.
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ 159.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: xetex.def on input line 107.
-)
-\Gin@req@height=\dimen180
-\Gin@req@width=\dimen181
-)
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -952,11 +1227,11 @@ Package graphics Info: Driver file: xetex.def on input line 107.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 160.
-Package microtype Info: Applying patch `item' on input line 160.
-Package microtype Info: Applying patch `toc' on input line 160.
-Package microtype Info: Applying patch `eqnum' on input line 160.
-Package microtype Info: Applying patch `footnote' on input line 160.
+LaTeX Info: Redefining \microtypecontext on input line 159.
+Package microtype Info: Applying patch `item' on input line 159.
+Package microtype Info: Applying patch `toc' on input line 159.
+Package microtype Info: Applying patch `eqnum' on input line 159.
+Package microtype Info: Applying patch `footnote' on input line 159.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -966,7 +1241,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `DejaVuSerif' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package hyperref Info: Link coloring ON on input line 160.
+Package hyperref Info: Link coloring ON on input line 159.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -976,32 +1251,32 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count322
+\c@section@level=\count344
 )
-LaTeX Info: Redefining \ref on input line 160.
-LaTeX Info: Redefining \pageref on input line 160.
-LaTeX Info: Redefining \nameref on input line 160.
+LaTeX Info: Redefining \ref on input line 159.
+LaTeX Info: Redefining \pageref on input line 159.
+LaTeX Info: Redefining \nameref on input line 159.
 
 (./Math_logig_full.out) (./Math_logig_full.out)
-\@outlinefile=\write3
-\openout3 = `Math_logig_full.out'.
+\@outlinefile=\write4
+\openout4 = `Math_logig_full.out'.
 
-LaTeX Info: Redefining \rmfamily on input line 160.
-LaTeX Info: Redefining \sffamily on input line 160.
-LaTeX Info: Redefining \ttfamily on input line 160.
-LaTeX Info: Redefining \rmfamily on input line 160.
-LaTeX Info: Redefining \sffamily on input line 160.
-LaTeX Info: Redefining \ttfamily on input line 160.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
 LaTeX Font Info:    Font shape `TU/DejaVuSerif(1)/m/n' will be
-(Font)              scaled to size 21.15489pt on input line 163.
+(Font)              scaled to size 21.15489pt on input line 162.
 LaTeX Font Info:    Font shape `TU/DejaVuSans(0)/m/n' will be
-(Font)              scaled to size 20.07826pt on input line 163.
+(Font)              scaled to size 20.07826pt on input line 162.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `DejaVuSans' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TU/DejaVuSerif(0)/m/n' will be
-(Font)              scaled to size 21.15489pt on input line 163.
+(Font)              scaled to size 21.15489pt on input line 162.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680919331165586.
 
@@ -1009,7 +1284,7 @@ Package fontspec Info: DejaVu Sans scale = 0.9680919331165586.
 Package fontspec Info: DejaVu Sans scale = 0.9680919331165586.
 
 LaTeX Font Info:    Font shape `TU/DejaVuSans(0)/m/n' will be
-(Font)              scaled to size 11.61713pt on input line 163.
+(Font)              scaled to size 11.61713pt on input line 162.
 
 Package fontspec Info: DejaVu Sans/B scale = 0.9680919331165586.
 
@@ -1046,18 +1321,18 @@ Package fontspec Info: Font family 'DejaVuSans(1)' created for font 'DejaVu
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/DejaVuSans(1)/m/n' will be
-(Font)              scaled to size 20.07826pt on input line 163.
+(Font)              scaled to size 20.07826pt on input line 162.
 LaTeX Font Info:    Font shape `TU/DejaVuSans(1)/b/n' will be
-(Font)              scaled to size 20.07826pt on input line 163.
+(Font)              scaled to size 20.07826pt on input line 162.
 LaTeX Font Info:    Font shape `TU/DejaVuSerif(1)/m/n' will be
-(Font)              scaled to size 14.68805pt on input line 163.
+(Font)              scaled to size 14.68805pt on input line 162.
 LaTeX Font Info:    Font shape `TU/DejaVuSerif(0)/m/n' will be
-(Font)              scaled to size 14.68805pt on input line 163.
+(Font)              scaled to size 14.68805pt on input line 162.
 LaTeX Font Info:    Font shape `TU/DejaVuSerif(0)/m/n' will be
-(Font)              scaled to size 10.20004pt on input line 163.
+(Font)              scaled to size 10.20004pt on input line 162.
 LaTeX Font Info:    Font shape `TU/DejaVuSerif(0)/m/n' will be
-(Font)              scaled to size 7.14003pt on input line 163.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 163
+(Font)              scaled to size 7.14003pt on input line 162.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 162
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1066,7 +1341,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 163
+LaTeX Font Info:    Trying to load font information for U+msb on input line 162
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1076,7 +1351,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 1
-63.
+62.
 
 (/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
@@ -1087,9 +1362,9 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 
 ]
 LaTeX Font Info:    Font shape `TU/DejaVuSerif(1)/m/n' will be
-(Font)              scaled to size 25.3777pt on input line 163.
+(Font)              scaled to size 25.3777pt on input line 162.
 LaTeX Font Info:    Font shape `TU/DejaVuSerif(1)/b/n' will be
-(Font)              scaled to size 25.3777pt on input line 163.
+(Font)              scaled to size 25.3777pt on input line 162.
 
 (./Math_logig_full.toc
 LaTeX Info: Redefining \rmfamily on input line 1.
@@ -1106,9 +1381,9 @@ LaTeX Font Info:    Font shape `TU/DejaVuSerif(0)/m/n' will be
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 LaTeX Font Info:    Font shape `TU/DejaVuSans(1)/m/n' will be
-(Font)              scaled to size 11.61713pt on input line 106.
+(Font)              scaled to size 11.61713pt on input line 151.
 LaTeX Font Info:    Font shape `TU/DejaVuSans(1)/m/n' will be
-(Font)              scaled to size 10.60062pt on input line 106.
+(Font)              scaled to size 10.60062pt on input line 151.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -1126,7 +1401,7 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [3]
-Underfull \hbox (badness 2707) in paragraph at lines 157--157
+Underfull \hbox (badness 2707) in paragraph at lines 233--233
  [][] [][][]\TU/DejaVuSerif(1)/m/n/12 Категоричность бесконечномерных векторных
  про- 
  []
@@ -1141,8 +1416,8 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 [4])
-\tf@toc=\write4
-\openout4 = `Math_logig_full.toc'.
+\tf@toc=\write5
+\openout5 = `Math_logig_full.toc'.
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -1158,9 +1433,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 LaTeX Font Info:    Font shape `TU/DejaVuSans(1)/b/n' will be
-(Font)              scaled to size 11.61713pt on input line 164.
+(Font)              scaled to size 11.61713pt on input line 163.
 LaTeX Font Info:    Font shape `TU/DejaVuSans(1)/b/n' will be
-(Font)              scaled to size 24.08617pt on input line 164.
+(Font)              scaled to size 24.08617pt on input line 163.
  [6
 
 ]
@@ -1169,7 +1444,7 @@ LaTeX Font Info:    Font shape `TU/DejaVuSans(1)/b/n' will be
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 LaTeX Font Info:    Font shape `TU/DejaVuSans(1)/b/n' will be
-(Font)              scaled to size 16.72865pt on input line 167.
+(Font)              scaled to size 16.72865pt on input line 166.
 [7
 
 ]
@@ -1184,29 +1459,29 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [8]
 LaTeX Font Info:    Font shape `TU/DejaVuSerif(1)/m/n' will be
-(Font)              scaled to size 17.62567pt on input line 283.
+(Font)              scaled to size 17.62567pt on input line 282.
 LaTeX Font Info:    Font shape `TU/DejaVuSans(0)/m/n' will be
-(Font)              scaled to size 16.72865pt on input line 283.
+(Font)              scaled to size 16.72865pt on input line 282.
 LaTeX Font Info:    Font shape `TU/DejaVuSerif(0)/m/n' will be
-(Font)              scaled to size 17.62567pt on input line 283.
+(Font)              scaled to size 17.62567pt on input line 282.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
 
 LaTeX Font Info:    Font shape `TU/DejaVuSans(1)/m/n' will be
-(Font)              scaled to size 16.72865pt on input line 283.
+(Font)              scaled to size 16.72865pt on input line 282.
 LaTeX Font Info:    Font shape `TU/DejaVuSans(0)/m/n' will be
-(Font)              scaled to size 13.94054pt on input line 285.
+(Font)              scaled to size 13.94054pt on input line 284.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
 LaTeX Font Info:    Font shape `TU/DejaVuSans(1)/m/n' will be
-(Font)              scaled to size 13.94054pt on input line 285.
+(Font)              scaled to size 13.94054pt on input line 284.
 LaTeX Font Info:    Font shape `TU/DejaVuSans(1)/b/n' will be
-(Font)              scaled to size 13.94054pt on input line 285.
+(Font)              scaled to size 13.94054pt on input line 284.
 LaTeX Font Info:    Font shape `TU/DejaVuSerif(1)/m/n' will be
-(Font)              scaled to size 8.16003pt on input line 310.
+(Font)              scaled to size 8.16003pt on input line 309.
 LaTeX Font Info:    Font shape `TU/DejaVuSerif(1)/m/n' will be
-(Font)              scaled to size 6.12003pt on input line 310.
+(Font)              scaled to size 6.12003pt on input line 309.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -1234,7 +1509,7 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
 LaTeX Font Info:    Font shape `TU/DejaVuSerif(1)/m/it' will be
-(Font)              scaled to size 12.24005pt on input line 456.
+(Font)              scaled to size 12.24005pt on input line 455.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -1301,7 +1576,7 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
 
-Underfull \hbox (badness 5008) in paragraph at lines 768--770
+Underfull \hbox (badness 5008) in paragraph at lines 767--769
 []\TU/DejaVuSerif(1)/m/n/12 логическую система, предназначенную для построения 
 доказа-
  []
@@ -1336,7 +1611,7 @@ Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 LaTeX Font Info:    Font shape `TU/DejaVuSerif(0)/b/n' will be
-(Font)              scaled to size 12.24005pt on input line 928.
+(Font)              scaled to size 12.24005pt on input line 927.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -1432,11 +1707,11 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [24]
 LaTeX Font Info:    Font shape `TU/DejaVuSerif(0)/m/it' will be
-(Font)              scaled to size 12.24005pt on input line 1378.
+(Font)              scaled to size 12.24005pt on input line 1377.
 LaTeX Font Info:    Font shape `TU/DejaVuSerif(1)/m/it' will be
-(Font)              scaled to size 8.16003pt on input line 1382.
+(Font)              scaled to size 8.16003pt on input line 1381.
 LaTeX Font Info:    Font shape `TU/DejaVuSerif(1)/m/it' will be
-(Font)              scaled to size 6.12003pt on input line 1382.
+(Font)              scaled to size 6.12003pt on input line 1381.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -1451,7 +1726,7 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
 
 
-Underfull \hbox (badness 1297) in paragraph at lines 1444--1444
+Underfull \hbox (badness 1297) in paragraph at lines 1443--1443
 |[]\TU/DejaVuSans(1)/b/n/17.28 Интуиционистское исчисление высказыва-
  []
 
@@ -1487,39 +1762,39 @@ Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 1539.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 1538.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 2.04044pt
-(hyperref)                removed on input line 1539.
+(hyperref)                removed on input line 1538.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 1539.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 2.04044pt
-(hyperref)                removed on input line 1539.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 1539.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 1538.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 2.04044pt
-(hyperref)                removed on input line 1539.
+(hyperref)                removed on input line 1538.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 1539.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 1538.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 2.04044pt
-(hyperref)                removed on input line 1539.
+(hyperref)                removed on input line 1538.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 1538.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.04044pt
+(hyperref)                removed on input line 1538.
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -1538,7 +1813,7 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
-Underfull \hbox (badness 2478) in paragraph at lines 1599--1603
+Underfull \hbox (badness 2478) in paragraph at lines 1598--1602
 []\TU/DejaVuSerif(1)/m/n/12 Следовательно, для конструктивного доказательства д
 изъюнкции
  []
@@ -1573,7 +1848,7 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
 
-Overfull \hbox (62.64233pt too wide) detected at line 1713
+Overfull \hbox (62.64233pt too wide) detected at line 1712
 []\OML/cmm/m/it/12 :
  []
 
@@ -1641,7 +1916,7 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [34]
-Underfull \hbox (badness 1199) in paragraph at lines 2002--2004
+Underfull \hbox (badness 1199) in paragraph at lines 2001--2003
 []\TU/DejaVuSerif(1)/m/n/12 Множества, принадлежащие $\OT1/cmr/m/n/12 
 $\TU/DejaVuSerif(1)/m/n/12 , называются \TU/DejaVuSerif(1)/b/n/12 открытыми мно
 же-
@@ -1738,7 +2013,7 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [41]
-Underfull \hbox (badness 1248) in paragraph at lines 2478--2481
+Underfull \hbox (badness 1248) in paragraph at lines 2477--2480
 \TU/DejaVuSerif(1)/m/n/12 являются непустыми непересекающимися открытыми множес
 твами,
  []
@@ -1847,6 +2122,12 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [48]
 
+Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
@@ -1856,96 +2137,77 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [49]
-Глава 2.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-[50
-
-]
-Глава 3.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-[51
-
-]
-Глава 4.
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-[52
-
-]
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
- [53
-
-]
-Глава 5.
-
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
-LaTeX Font Info:    Trying to load font information for U+euf on input line 321
-3.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-)
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-euf.cfg
-File: mt-euf.cfg 2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
-
-) [54
-
-]
+ [50]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [51]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [52]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [53]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [54]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -1963,9 +2225,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
-
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
@@ -1974,17 +2233,17 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
+ [56]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-[56]
-
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
+LaTeX Font Info:    Font shape `TU/DejaVuSerif(0)/b/n' will be
+(Font)              scaled to size 14.68805pt on input line 3769.
+LaTeX Font Info:    Font shape `TU/DejaVuSerif(1)/b/n' will be
+(Font)              scaled to size 14.68805pt on input line 3769.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -1994,7 +2253,14 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
- [57]
+
+[57]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -2005,9 +2271,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [58]
-
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -2022,7 +2285,10 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [59]
 
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -2034,6 +2300,12 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [60]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
@@ -2056,6 +2328,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
  [62]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -2066,10 +2341,10 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
  [63]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -2090,6 +2365,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [65]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -2119,28 +2397,28 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
- [68]
-Overfull \hbox (4.58716pt too wide) in paragraph at lines 4039--4041
-[][]\TU/DejaVuSerif(1)/m/it/12 Замечание \TU/DejaVuSerif(1)/m/n/12 5.1\TU/DejaV
-uSerif(1)/m/it/12 . []\TU/DejaVuSerif(1)/m/n/12 Смысл леммы состоит в том, что 
-изоморфные $\OML/cmm/m/it/12 L$\TU/DejaVuSerif(1)/m/n/12 -структуры
- []
 
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [68]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [69]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-[69]
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -2161,6 +2439,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
  [71]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -2171,7 +2452,17 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
- [72]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+[72]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -2183,7 +2474,7 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [73]
 
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -2196,9 +2487,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [74]
 
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
-
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
@@ -2208,6 +2496,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [75]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -2232,6 +2523,12 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [77]
 
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
@@ -2241,9 +2538,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [78]
-
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -2263,12 +2557,15 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
  [80]
-Underfull \hbox (badness 1107) in paragraph at lines 4750--4751
-[][]\TU/DejaVuSerif(1)/m/it/12 Замечание \TU/DejaVuSerif(1)/m/n/12 5.15\TU/Deja
-VuSerif(1)/m/it/12 . []\TU/DejaVuSerif(1)/m/n/12 Это утверждение даёт удобный с
-пособ доказывать
- []
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -2279,7 +2576,10 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-[81]
+ [81]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -2299,6 +2599,12 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
  [83]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -2309,7 +2615,20 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
  [84]
+Overfull \hbox (41.77005pt too wide) detected at line 5849
+[]
+ []
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -2319,7 +2638,14 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
- [85]
+[85]
+Overfull \hbox (51.23355pt too wide) detected at line 5919
+[]
+ []
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
@@ -2332,14 +2658,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
- [86]
-Overfull \hbox (34.59521pt too wide) detected at line 5071
-\OML/cmm/m/it/12 S[]B  \OT1/cmr/m/n/12 =[]\OMS/cmsy/m/n/12 )  8\OML/cmm/m/it/12
- ^^Y \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 Aut\OT1/cmr/m/n/12 (\U/euf/m/n/12 A\OT
-1/cmr/m/n/12 )\OML/cmm/m/it/12 ;  []^^Y\OMS/cmsy/m/n/12 j[] \OT1/cmr/m/n/12 = \
-OML/cmm/m/it/12 id[] \OMS/cmsy/m/n/12 ) \OML/cmm/m/it/12 ^^Y\OT1/cmr/m/n/12 (\O
-ML/cmm/m/it/12 S\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 S[]:
- []
+[86]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -2350,7 +2671,10 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-[87]
+ [87]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -2370,16 +2694,23 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
  [89]
 
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
 
-Underfull \hbox (badness 1466) in paragraph at lines 5264--5264
-|[]\TU/DejaVuSans(1)/b/n/14.4 Бескванторные, экзистенциальные и универсаль-
- []
-
-
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
@@ -2388,9 +2719,15 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-[90]
+ [90]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -2411,7 +2748,13 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
  [92]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -2423,7 +2766,19 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [93]
 
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Underfull \hbox (badness 3657) in paragraph at lines 6532--6534
+[]\TU/DejaVuSerif(1)/m/n/12 произвольное объединение замкнутых вверх множеств з
+амкнуто
+ []
+
+
+Underfull \hbox (badness 3989) in paragraph at lines 6534--6536
+[]\TU/DejaVuSerif(1)/m/n/12 произвольное пересечение замкнутых вверх множеств з
+амкнуто
+ []
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -2431,7 +2786,13 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
- [94]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+[94]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -2442,6 +2803,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [95]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -2465,10 +2829,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [97]
-Overfull \hbox (38.42331pt too wide) in paragraph at lines 5761--5762
-[][]\TU/DejaVuSerif(1)/b/n/12 Определение 5.12. []Дедуктивным замыканием \TU/De
-jaVuSerif(1)/m/n/12 множества $\OML/cmm/m/it/12 L$\TU/DejaVuSerif(1)/m/n/12 -пр
-едложений
+Underfull \hbox (badness 1163) in paragraph at lines 6857--6859
+[]\TU/DejaVuSerif(1)/m/n/12 Следовательно, всякое недоказуемое в ИИВ высказыван
+ие имеет
  []
 
 
@@ -2481,18 +2844,24 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 [98]
+Глава 2.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
 
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
- [99]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+[99
+
+]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -2505,7 +2874,10 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [100]
 
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -2521,14 +2893,48 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Underfull \hbox (badness 4279) in paragraph at lines 7172--7176
+[]\TU/DejaVuSerif(1)/b/n/12 Определение. Квадратом оппозиций \TU/DejaVuSerif(1)
+/m/n/12 называется схема логи-
+ []
+
+
+Underfull \hbox (badness 2150) in paragraph at lines 7172--7176
+\TU/DejaVuSerif(1)/m/n/12 ческих отношений между категорическими высказываниями
+ типов
+ []
+
+LaTeX Font Info:    Font shape `TU/DejaVuSerif(0)/b/n' will be
+(Font)              scaled to size 8.16003pt on input line 7182.
+LaTeX Font Info:    Font shape `TU/DejaVuSerif(0)/b/n' will be
+(Font)              scaled to size 6.12003pt on input line 7182.
+
+LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
+(Font)              using `U/stmry/m/n' instead on input line 7182.
+
+LaTeX Font Info:    Font shape `TU/DejaVuSerif(1)/m/n' will be
+(Font)              scaled to size 11.16904pt on input line 7187.
+
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
- [102]
 
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+[102]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -2540,23 +2946,33 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [103]
-Underfull \hbox (badness 1354) in paragraph at lines 6108--6109
-\TU/DejaVuSerif(1)/m/n/12 языке $\OML/cmm/m/it/12 L[]$\TU/DejaVuSerif(1)/m/n/12
- . Например, аксиома существования обратного элемента
- []
-
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-[104]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [104]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -2572,10 +2988,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
 
-Overfull \hbox (12.36952pt too wide) in paragraph at lines 6224--6225
-[][]\TU/DejaVuSerif(1)/b/n/12 Определение 5.21. []Упорядоченным полем \TU/DejaV
-uSerif(1)/m/n/12 называется $\OML/cmm/m/it/12 L[]$\TU/DejaVuSerif(1)/m/n/12 -ст
-руктура 
+Underfull \hbox (badness 1406) in paragraph at lines 7431--7435
+[]\TU/DejaVuSerif(1)/b/n/12 Определение. Модусом силлогизма \TU/DejaVuSerif(1)/
+m/n/12 называется последователь-
  []
 
 
@@ -2589,6 +3004,24 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 [106]
 
+Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
+
+
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
@@ -2598,6 +3031,43 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [107]
+Глава 3.
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+[108
+
+]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [109
+
+]
+Глава 4.
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+LaTeX Font Info:    Trying to load font information for U+euf on input line 763
+3.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-euf.cfg
+File: mt-euf.cfg 2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
+
+) [110
+
+]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
@@ -2607,33 +3077,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
- [108]
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
- [109]
-
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
- [110]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -2645,6 +3088,26 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [111]
 
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+[112]
+
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
 
@@ -2659,43 +3122,23 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
- [112]
-Overfull \hbox (21.92072pt too wide) detected at line 6575
-\OT1/cmr/m/n/12 ^^F[]  \OMS/cmsy/m/n/12 ([])  []\OT1/cmr/m/n/12 ^^F[]\OML/cmm/m
-/it/12 :
- []
+ [113]
 
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [114]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
-LaTeX Font Info:    Font shape `TU/DejaVuSerif(0)/b/n' will be
-(Font)              scaled to size 14.68805pt on input line 6587.
-LaTeX Font Info:    Font shape `TU/DejaVuSerif(1)/b/n' will be
-(Font)              scaled to size 14.68805pt on input line 6587.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-[113]
-Underfull \hbox (badness 4303) in paragraph at lines 6619--6620
-[]\TU/DejaVuSerif(1)/m/n/12 Дадим модельно-теоретическую идею доказатель-
- []
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-[114]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -2706,9 +3149,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [115]
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
 
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
@@ -2723,16 +3163,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [116]
 
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
- [117]
-
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
 
@@ -2744,7 +3174,20 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
+ [117]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
  [118]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -2766,9 +3209,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [120]
 
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
-
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
@@ -2789,9 +3229,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [122]
 
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
-
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
@@ -2810,7 +3247,14 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
- [124]
+
+[124]
+Overfull \hbox (4.58716pt too wide) in paragraph at lines 8459--8461
+[][]\TU/DejaVuSerif(1)/m/it/12 Замечание \TU/DejaVuSerif(1)/m/n/12 4.1\TU/DejaV
+uSerif(1)/m/it/12 . []\TU/DejaVuSerif(1)/m/n/12 Смысл леммы состоит в том, что 
+изоморфные $\OML/cmm/m/it/12 L$\TU/DejaVuSerif(1)/m/n/12 -структуры
+ []
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
@@ -2823,18 +3267,20 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
- [125]
+[125]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-[126]
+ [126]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -2866,6 +3312,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [129]
 
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
@@ -2875,6 +3324,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [130]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -2896,6 +3348,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [132]
 
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
@@ -2916,6 +3371,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [134]
 
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
@@ -2935,30 +3393,22 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [136]
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
- [137]
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
-
-Overfull \hbox (71.9223pt too wide) detected at line 8119
-[]  \OMS/cmsy/m/n/12 ([])  []\OML/cmm/m/it/12 :
+Underfull \hbox (badness 1107) in paragraph at lines 9170--9171
+[][]\TU/DejaVuSerif(1)/m/it/12 Замечание \TU/DejaVuSerif(1)/m/n/12 4.15\TU/Deja
+VuSerif(1)/m/it/12 . []\TU/DejaVuSerif(1)/m/n/12 Это утверждение даёт удобный с
+пособ доказывать
  []
 
 
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+[137]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -2968,10 +3418,7 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-[138]
-
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
+ [138]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3006,9 +3453,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
 
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
-
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
@@ -3018,8 +3462,16 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [142]
+Overfull \hbox (34.59521pt too wide) detected at line 9491
+\OML/cmm/m/it/12 S[]B  \OT1/cmr/m/n/12 =[]\OMS/cmsy/m/n/12 )  8\OML/cmm/m/it/12
+ ^^Y \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 Aut\OT1/cmr/m/n/12 (\U/euf/m/n/12 A\OT
+1/cmr/m/n/12 )\OML/cmm/m/it/12 ;  []^^Y\OMS/cmsy/m/n/12 j[] \OT1/cmr/m/n/12 = \
+OML/cmm/m/it/12 id[] \OMS/cmsy/m/n/12 ) \OML/cmm/m/it/12 ^^Y\OT1/cmr/m/n/12 (\O
+ML/cmm/m/it/12 S\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 S[]:
+ []
 
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -3027,13 +3479,7 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
- [143]
+[143]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3044,9 +3490,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [144]
-
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3061,7 +3504,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
 
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+Underfull \hbox (badness 1466) in paragraph at lines 9684--9684
+|[]\TU/DejaVuSans(1)/b/n/14.4 Бескванторные, экзистенциальные и универсаль-
+ []
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -3069,7 +3514,13 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
- [146]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+[146]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3080,9 +3531,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [147]
-
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3112,11 +3560,7 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-
-[150]
-
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
+ [150]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3138,6 +3582,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [152]
 
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
@@ -3147,6 +3594,12 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [153]
+Overfull \hbox (38.42331pt too wide) in paragraph at lines 10181--10182
+[][]\TU/DejaVuSerif(1)/b/n/12 Определение 4.12. []Дедуктивным замыканием \TU/De
+jaVuSerif(1)/m/n/12 множества $\OML/cmm/m/it/12 L$\TU/DejaVuSerif(1)/m/n/12 -пр
+едложений
+ []
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3156,7 +3609,7 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
- [154]
+[154]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3168,6 +3621,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [155]
 
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
@@ -3177,6 +3633,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [156]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3201,9 +3660,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
 
 
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
-
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
@@ -3213,6 +3669,11 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [159]
+Underfull \hbox (badness 1354) in paragraph at lines 10528--10529
+\TU/DejaVuSerif(1)/m/n/12 языке $\OML/cmm/m/it/12 L[]$\TU/DejaVuSerif(1)/m/n/12
+ . Например, аксиома существования обратного элемента
+ []
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3222,7 +3683,10 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
- [160]
+[160]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3234,19 +3698,25 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [161]
 
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-[162]
-
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
+
+Overfull \hbox (12.36952pt too wide) in paragraph at lines 10644--10645
+[][]\TU/DejaVuSerif(1)/b/n/12 Определение 4.21. []Упорядоченным полем \TU/DejaV
+uSerif(1)/m/n/12 называется $\OML/cmm/m/it/12 L[]$\TU/DejaVuSerif(1)/m/n/12 -ст
+руктура 
+ []
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+[162]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3257,6 +3727,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [163]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3277,6 +3750,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [165]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3301,6 +3777,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
 
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
@@ -3310,6 +3789,11 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [168]
+Overfull \hbox (21.92072pt too wide) detected at line 10995
+\OT1/cmr/m/n/12 ^^F[]  \OMS/cmsy/m/n/12 ([])  []\OT1/cmr/m/n/12 ^^F[]\OML/cmm/m
+/it/12 :
+ []
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
@@ -3322,17 +3806,21 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
- [169]
+[169]
+Underfull \hbox (badness 4303) in paragraph at lines 11039--11040
+[]\TU/DejaVuSerif(1)/m/n/12 Дадим модельно-теоретическую идею доказатель-
+ []
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
- [170]
+[170]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3343,6 +3831,12 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [171]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3367,13 +3861,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
 
-Overfull \hbox (11.45131pt too wide) in paragraph at lines 10217--10218
-[]\TU/DejaVuSerif(1)/m/n/12 Пусть $\OML/cmm/m/it/12 L$ \TU/DejaVuSerif(1)/m/n/1
-2 — язык первого порядка, и пусть $\OT1/cmr/m/n/12 ^^F$ \TU/DejaVuSerif(1)/m/n/
-12 — множество $\OML/cmm/m/it/12 L$\TU/DejaVuSerif(1)/m/n/12 -предложений. 
- []
-
-
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
@@ -3382,10 +3869,7 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-[174]
-
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
+ [174]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3397,9 +3881,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [175]
 
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
-
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
@@ -3409,6 +3890,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [176]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3420,9 +3904,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [177]
 
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
-
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
@@ -3432,6 +3913,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [178]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3443,9 +3927,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [179]
 
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
-
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
@@ -3455,6 +3936,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [180]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3474,16 +3958,8 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
- [182]
 
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Underfull \hbox (badness 5460) in paragraph at lines 10742--10742
-|[]\TU/DejaVuSans(1)/b/n/12 Неаксиоматизируемость класса периодических абелевых
-
- []
-
+[182]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3493,7 +3969,7 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-[183]
+ [183]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3515,14 +3991,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [185]
 
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10917--10917
-|[]\TU/DejaVuSans(1)/b/n/14.4 Конечная аксиоматизируемость и дополнения
- []
-
-
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
@@ -3531,10 +3999,7 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-[186]
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
+ [186]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3574,9 +4039,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
  [190]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -3599,7 +4061,25 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [192]
 
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [193]
+
 Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Overfull \hbox (71.9223pt too wide) detected at line 12539
+[]  \OMS/cmsy/m/n/12 ([])  []\OML/cmm/m/it/12 :
+ []
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
@@ -3613,17 +4093,10 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
- [193]
+[194]
 
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
- [194]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3635,9 +4108,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [195]
 
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
-
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
@@ -3648,25 +4118,21 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [196]
 
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [197]
+
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
 
-Underfull \hbox (badness 2932) in paragraph at lines 11573--11574
-[][]\TU/DejaVuSerif(1)/m/it/12 Замечание \TU/DejaVuSerif(1)/m/n/12 5.82\TU/Deja
-VuSerif(1)/m/it/12 . []\TU/DejaVuSerif(1)/m/n/12 Через $\OMS/cmsy/m/n/12 A[]$ \
-TU/DejaVuSerif(1)/m/n/12 обозначается естественное расширение
- []
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-[197]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3677,6 +4143,12 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [198]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3711,16 +4183,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [201]
 
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
- [202]
-
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
 
@@ -3732,7 +4194,20 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
+ [202]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
  [203]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3762,7 +4237,11 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
- [206]
+
+[206]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3784,9 +4263,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [208]
 
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
-
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
@@ -3795,8 +4271,7 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-
-[209]
+ [209]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3807,11 +4282,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [210]
-Underfull \hbox (badness 1360) in paragraph at lines 12424--12426
-\TU/DejaVuSerif(1)/m/n/12 В стандартной модели натуральных чисел истинно предло
-жение о
- []
-
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3821,10 +4291,7 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-[211]
-
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
+ [211]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3856,6 +4323,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [214]
 
+Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
+
+
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
 
@@ -3878,12 +4348,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [216]
-Underfull \hbox (badness 2478) in paragraph at lines 12726--12727
-[]\TU/DejaVuSerif(1)/m/n/12 По теореме компактности $\OT1/cmr/m/n/12 ^^F$ \TU/D
-ejaVuSerif(1)/m/n/12 выполнимо. Значит, существует $\OML/cmm/m/it/12 L[]$\TU/De
-jaVuSerif(1)/m/n/12 -
- []
-
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3893,21 +4357,7 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-[217]
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
-
-Underfull \hbox (badness 1688) in paragraph at lines 12833--12834
-[][]\TU/DejaVuSerif(1)/b/n/12 Определение 5.55. []\TU/DejaVuSerif(1)/m/n/12 Пус
-ть $\OML/cmm/m/it/12 ^^T$ \TU/DejaVuSerif(1)/m/n/12 — кардинал. Теория $\OML/cm
-m/m/it/12 T$ \TU/DejaVuSerif(1)/m/n/12 называется $\OML/cmm/m/it/12 ^^T$\TU/Dej
-aVuSerif(1)/b/n/12 -
- []
-
+ [217]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3916,12 +4366,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
 
 [218]
-Overfull \hbox (8.29095pt too wide) detected at line 12859
-[]\OML/cmm/m/it/12 ^^T:
- []
-
 
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
@@ -3934,10 +4381,7 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-[219]
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
+ [219]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3952,15 +4396,12 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
-Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
-Overfull \hbox (36.45628pt too wide) in paragraph at lines 12984--12986
-\TU/DejaVuSerif(1)/m/it/12 бесконечномерных векторных пространств над $\OML/cmm
-/m/it/12 F$ \TU/DejaVuSerif(1)/m/it/12 является $\OML/cmm/m/it/12 ^^T$\TU/DejaV
-uSerif(1)/m/it/12 -категоричной
- []
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
+ [221]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -3970,32 +4411,7 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-[221]
-Underfull \hbox (badness 1838) in paragraph at lines 13016--13017
-[]\TU/DejaVuSerif(1)/m/n/12 По теореме линейной алгебры о классификации векторн
-ых про-
- []
-
-
-Overfull \hbox (256.68762pt too wide) detected at line 13038
-[]\OML/cmm/m/it/12 ^^T[]^^T[]
- []
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Underfull \hbox (badness 1297) in paragraph at lines 13049--13050
-[]\TU/DejaVuSerif(1)/m/n/12 Интуитивно это связано с тем, что любое предложение
- первого
- []
-
-
-Underfull \hbox (badness 1454) in paragraph at lines 13049--13050
-\TU/DejaVuSerif(1)/m/n/12 ных зависимостей между ними. В бесконечномерном прост
-ранстве
- []
-
+ [222]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -4005,49 +4421,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-[222]
-Underfull \hbox (badness 1242) in paragraph at lines 13065--13066
-\TU/DejaVuSerif(1)/m/n/12 чение кванторов для теории векторных пространств в по
-дходящем
- []
-
-
-Underfull \hbox (badness 1609) in paragraph at lines 13065--13066
-\TU/DejaVuSerif(1)/m/n/12 языке. Но для текущего уровня достаточно использовать
- линейно-
- []
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-LaTeX Font Info:    Font shape `TU/DejaVuSerif(0)/b/n' will be
-(Font)              scaled to size 17.62567pt on input line 13105.
-LaTeX Font Info:    Font shape `TU/DejaVuSerif(1)/b/n' will be
-(Font)              scaled to size 17.62567pt on input line 13105.
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-[223]
+ [223]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -4059,6 +4435,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [224]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -4098,9 +4477,6 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
  [228]
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -4113,7 +4489,14 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [229]
 
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Overfull \hbox (11.45131pt too wide) in paragraph at lines 14637--14638
+[]\TU/DejaVuSerif(1)/m/n/12 Пусть $\OML/cmm/m/it/12 L$ \TU/DejaVuSerif(1)/m/n/1
+2 — язык первого порядка, и пусть $\OT1/cmr/m/n/12 ^^F$ \TU/DejaVuSerif(1)/m/n/
+12 — множество $\OML/cmm/m/it/12 L$\TU/DejaVuSerif(1)/m/n/12 -предложений. 
+ []
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -4124,9 +4507,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
- [230]
+[230]
 
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -4138,6 +4521,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
  [231]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
@@ -4157,12 +4543,9 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
  [233]
 
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
 
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
@@ -4183,118 +4566,772 @@ Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
+ [235]
 
-[235]
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
 
- [236
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [236]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [237]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [238]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Underfull \hbox (badness 5460) in paragraph at lines 15162--15162
+|[]\TU/DejaVuSans(1)/b/n/12 Неаксиоматизируемость класса периодических абелевых
+
+ []
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+[239]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [240]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [241]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15337--15337
+|[]\TU/DejaVuSans(1)/b/n/14.4 Конечная аксиоматизируемость и дополнения
+ []
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+[242]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [243]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [244]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [245]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [246]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [247]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [248]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [249]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [250]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [251]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [252]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Underfull \hbox (badness 2932) in paragraph at lines 15993--15994
+[][]\TU/DejaVuSerif(1)/m/it/12 Замечание \TU/DejaVuSerif(1)/m/n/12 4.82\TU/Deja
+VuSerif(1)/m/it/12 . []\TU/DejaVuSerif(1)/m/n/12 Через $\OMS/cmsy/m/n/12 A[]$ \
+TU/DejaVuSerif(1)/m/n/12 обозначается естественное расширение
+ []
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+[253]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [254]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [255]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [256]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [257]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [258]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [259]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [260]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [261]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [262]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [263]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [264]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+[265]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [266]
+Underfull \hbox (badness 1360) in paragraph at lines 16844--16846
+\TU/DejaVuSerif(1)/m/n/12 В стандартной модели натуральных чисел истинно предло
+жение о
+ []
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+[267]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [268]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [269]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [270]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [271]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [272]
+Underfull \hbox (badness 2478) in paragraph at lines 17146--17147
+[]\TU/DejaVuSerif(1)/m/n/12 По теореме компактности $\OT1/cmr/m/n/12 ^^F$ \TU/D
+ejaVuSerif(1)/m/n/12 выполнимо. Значит, существует $\OML/cmm/m/it/12 L[]$\TU/De
+jaVuSerif(1)/m/n/12 -
+ []
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+[273]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 17253--17254
+[][]\TU/DejaVuSerif(1)/b/n/12 Определение 4.55. []\TU/DejaVuSerif(1)/m/n/12 Пус
+ть $\OML/cmm/m/it/12 ^^T$ \TU/DejaVuSerif(1)/m/n/12 — кардинал. Теория $\OML/cm
+m/m/it/12 T$ \TU/DejaVuSerif(1)/m/n/12 называется $\OML/cmm/m/it/12 ^^T$\TU/Dej
+aVuSerif(1)/b/n/12 -
+ []
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+[274]
+Overfull \hbox (8.29095pt too wide) detected at line 17279
+[]\OML/cmm/m/it/12 ^^T:
+ []
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+[275]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [276]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Overfull \hbox (36.45628pt too wide) in paragraph at lines 17404--17406
+\TU/DejaVuSerif(1)/m/it/12 бесконечномерных векторных пространств над $\OML/cmm
+/m/it/12 F$ \TU/DejaVuSerif(1)/m/it/12 является $\OML/cmm/m/it/12 ^^T$\TU/DejaV
+uSerif(1)/m/it/12 -категоричной
+ []
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+[277]
+Underfull \hbox (badness 1838) in paragraph at lines 17436--17437
+[]\TU/DejaVuSerif(1)/m/n/12 По теореме линейной алгебры о классификации векторн
+ых про-
+ []
+
+
+Overfull \hbox (256.68762pt too wide) detected at line 17458
+[]\OML/cmm/m/it/12 ^^T[]^^T[]
+ []
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 17469--17470
+[]\TU/DejaVuSerif(1)/m/n/12 Интуитивно это связано с тем, что любое предложение
+ первого
+ []
+
+
+Underfull \hbox (badness 1454) in paragraph at lines 17469--17470
+\TU/DejaVuSerif(1)/m/n/12 ных зависимостей между ними. В бесконечномерном прост
+ранстве
+ []
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+[278]
+Underfull \hbox (badness 1242) in paragraph at lines 17485--17486
+\TU/DejaVuSerif(1)/m/n/12 чение кванторов для теории векторных пространств в по
+дходящем
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 17485--17486
+\TU/DejaVuSerif(1)/m/n/12 языке. Но для текущего уровня достаточно использовать
+ линейно-
+ []
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
+
+LaTeX Font Info:    Font shape `TU/DejaVuSerif(0)/b/n' will be
+(Font)              scaled to size 17.62567pt on input line 17525.
+LaTeX Font Info:    Font shape `TU/DejaVuSerif(1)/b/n' will be
+(Font)              scaled to size 17.62567pt on input line 17525.
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+[279]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680912696644235.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [280]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [281]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [282]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [283]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [284]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [285]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [286]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [287]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [288]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [289]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [290]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+
+[291]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [292
+
+]
+Глава 5.
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+[293
+
+]
+
+Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
+
+ [294
 
 ]
 Глава 6.
 
 Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-[237
-
-]
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
- [238
-
-]
-Глава 7.
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-[239
-
-]
-Глава 8.
-
-Package fontspec Info: DejaVu Sans scale = 0.9680920570776203.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
-
-
-Package fontspec Info: DejaVu Sans scale = 0.9680922178661621.
 
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
@@ -4346,23 +5383,26 @@ braces):
 >  {english/babelname}  =>  {american}
 >  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-[240
+[295
 
 ] (./Math_logig_full.aux
 LaTeX Info: Redefining \rmfamily on input line 20.
 LaTeX Info: Redefining \sffamily on input line 20.
 LaTeX Info: Redefining \ttfamily on input line 20.
 )
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 Package rerunfilecheck Info: File `Math_logig_full.out' has not changed.
-(rerunfilecheck)             Checksum: D8A2B967F1630B82AFADB0154C5E82A7;41063.
+(rerunfilecheck)             Checksum: 3DE8AABFBDE2313AAA7B63190A205326;41818.
  ) 
 Here is how much of TeX's memory you used:
- 18484 strings out of 476191
- 361348 string characters out of 5812072
- 788483 words of memory out of 5000000
- 38836 multiletter control sequences out of 15000+600000
- 484683 words of font info for 178 fonts, out of 8000000 for 9000
+ 28710 strings out of 476191
+ 585746 string characters out of 5812072
+ 977151 words of memory out of 5000000
+ 48840 multiletter control sequences out of 15000+600000
+ 485311 words of font info for 181 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 73i,12n,119p,1012b,695s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 100i,12n,119p,1012b,695s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Math_logig_full.pdf (241 pages).
+Output written on Math_logig_full.pdf (296 pages).

@@ -28,17 +28,17 @@ nav:
       - Логика:
           - Полный конспект: math/logic/index.md
 
-  - Программирование:
+  - Програ:
       - Обзор: programming/index.md
 
   - Сети:
       - Обзор: network/index.md
 
-  - Физика:
-      - Обзор: physics/index.md
+#   - Физика:
+#       - Обзор: physics/index.md
 
-  - Алгоритмы:
-      - Обзор: algo/index.md
+#   - Алгоритмы:
+#       - Обзор: algo/index.md
 
 markdown_extensions:
   - admonition
