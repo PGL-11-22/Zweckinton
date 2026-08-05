@@ -1,0 +1,3139 @@
+\documentclass[12pt,a4paper,oneside,openany]{book}
+
+% Компилировать через XeLaTeX.
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{russian}
+\setotherlanguage{english}
+\setmainfont{DejaVu Serif}[Ligatures=TeX,Scale=1.02]
+\setsansfont{DejaVu Sans}[Ligatures=TeX,Scale=MatchLowercase]
+\setmonofont{DejaVu Sans Mono}[Scale=MatchLowercase]
+
+% Математика и графика
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\allowdisplaybreaks
+\usepackage{changepage}
+\usepackage{array,booktabs,longtable}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,matrix,calc,decorations.pathreplacing}
+
+% Страница и единое оформление текста
+\usepackage[
+  left=24mm,
+  right=21mm,
+  top=24mm,
+  bottom=26mm,
+  headsep=8mm
+]{geometry}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{setspace}
+\onehalfspacing
+\setlength{\parindent}{1.25em}
+\setlength{\parskip}{0pt}
+\emergencystretch=2em
+
+\definecolor{logicblue}{HTML}{1F4E79}
+\definecolor{logicteal}{HTML}{2F6F73}
+\definecolor{logicgray}{HTML}{5F6872}
+\definecolor{logicline}{HTML}{D8DEE6}
+\definecolor{editorred}{HTML}{9B2C2C}
+\definecolor{explainbg}{HTML}{F4F7FA}
+
+\setlist{
+  topsep=0.45\baselineskip,
+  itemsep=0.2\baselineskip,
+  parsep=0pt,
+  leftmargin=*
+}
+
+% Оглавление
+\usepackage{tocloft}
+\setcounter{tocdepth}{2}
+\setcounter{secnumdepth}{3}
+\renewcommand{\cftchapfont}{\bfseries\color{logicblue}}
+\renewcommand{\cftchappagefont}{\bfseries\color{logicblue}}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\setlength{\cftbeforechapskip}{0.55em}
+
+% Заголовки
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\sffamily\bfseries\color{logicblue}\raggedright}
+  {\Large\MakeUppercase{\chaptername}\ \thechapter}
+  {0.6em}
+  {\Huge}
+  [\vspace{0.4em}{\titlerule[0.8pt]}]
+\titlespacing*{\chapter}{0pt}{-8pt}{28pt}
+
+\titleformat{name=\chapter,numberless}[display]
+  {\normalfont\sffamily\bfseries\color{logicblue}\raggedright}
+  {}
+  {0pt}
+  {\Huge}
+  [\vspace{0.4em}{\titlerule[0.8pt]}]
+\titlespacing*{name=\chapter,numberless}{0pt}{-8pt}{24pt}
+
+\titleformat{\section}
+  {\normalfont\Large\sffamily\bfseries\color{logicteal}}
+  {\thesection}
+  {0.75em}
+  {}
+\titlespacing*{\section}{0pt}{1.4\baselineskip}{0.55\baselineskip}
+
+\titleformat{\subsection}
+  {\normalfont\large\sffamily\bfseries\color{logicblue}}
+  {\thesubsection}
+  {0.7em}
+  {}
+\titlespacing*{\subsection}{0pt}{1.1\baselineskip}{0.35\baselineskip}
+
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\sffamily\bfseries\color{logicgray}}
+  {\thesubsubsection}
+  {0.65em}
+  {}
+
+% Колонтитулы
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\sffamily\small\color{logicgray}Линейная алгебра}
+\fancyhead[R]{\sffamily\small\color{logicgray}\nouppercase{\leftmark}}
+\fancyfoot[C]{\sffamily\small\color{logicgray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{%
+  \hbox to\headwidth{\color{logicline}\leaders\hrule height \headrulewidth\hfill}}
+\setlength{\headheight}{25pt}
+
+% Теоремные окружения: формулировки из исходного конспекта сохраняются.
+\theoremstyle{definition}
+\newtheorem{definition}{Определение}[chapter]
+\newtheorem{example}{Пример}[chapter]
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Теорема}[chapter]
+\newtheorem{lemma}{Лемма}[chapter]
+\newtheorem{proposition}{Утверждение}[chapter]
+\newtheorem{corollary}{Следствие}[chapter]
+
+\theoremstyle{remark}
+\newtheorem{remark}{Замечание}[chapter]
+
+% Редакторские дополнения визуально отделены от исходного слоя.
+\newenvironment{explanation}
+  {\begin{adjustwidth}{1.25em}{1.25em}\small
+   \noindent\textcolor{logicteal}{\sffamily\bfseries Пояснение.}\ }
+  {\par\end{adjustwidth}}
+\newenvironment{editorialnote}
+  {\begin{adjustwidth}{1.25em}{1.25em}\small
+   \noindent\textcolor{editorred}{\sffamily\bfseries Редакторская пометка.}\ }
+  {\par\end{adjustwidth}}
+\newenvironment{visualreconstruction}
+  {\begin{adjustwidth}{1.25em}{1.25em}\small
+   \noindent\textcolor{logicgray}{\sffamily\bfseries Схема.}\ }
+  {\par\end{adjustwidth}}
+
+% Команды
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\inv}{inv}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\rk}{rk}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\Span}{span}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\modelsrel}{\models}
+\newcommand{\proves}{\vdash}
+\newcommand{\uncertain}[1]{%
+  \textcolor{editorred}{\textbf{[неуверенная реконструкция: #1]}}}
+
+% Аргумент #1 позволяет менять ширину, по умолчанию она 1.2ex.
+\newcommand{\blank}[1][1.2ex]{%
+  \mbox{%
+    \vrule width 0.1ex height 0.4ex depth 0pt
+    \vrule width #1 height 0.1ex depth 0pt
+    \vrule width 0.1ex height 0.4ex depth 0pt
+  }%
+}
+
+\usepackage[hidelinks]{hyperref}
+
+\title{\textsf{\textbf{\color{logicblue}Линейная алгебра}}\\[0.5em]
+\author{Ямщиков Герман М3*33}
+\date{}
+
+\begin{document}
+\sloppy
+\frontmatter
+\maketitle
+\tableofcontents
+
+\mainmatter
+
+\chapter{Алгебраические структуры}
+
+Алгебраическая структура состоит из множества-носителя и заданных на нём
+операций. Сигнатура указывает арность каждой операции:
+
+\[
+  \mathcal A=\langle
+  \underbrace{A}_{\substack{\text{носитель}\\\text{(множество)}}},
+  \underbrace{f_1^{\,1},f_2^{\,2},\ldots}_{
+    \substack{\text{функции}\\\text{(сигнатура)}}}
+  \rangle .
+\]
+Верхний индекс функции указывает её арность. Иными словами, имеется
+множество и заданные на нём алгебраические операции.
+
+\section{Группоиды и группы}
+
+Связь основных структур удобно представить схемой:
+
+\begin{center}
+\begin{tikzpicture}[
+  scale=.9,
+  transform shape,
+  node distance=7mm and 22mm,
+  every node/.style={align=center},
+  arr/.style={-{Latex[length=2mm]},thick}
+]
+  \node (magma) {группоид (магма)};
+  \node[below left=of magma] (semi) {полугруппа};
+  \node[below=of semi] (monoid) {моноид};
+  \node[below=of monoid] (groupL) {группа};
+  \node[below right=of magma] (quasi) {квазигруппа};
+  \node[below=of quasi] (loop) {лупа};
+  \node[below=of loop] (groupR) {группа};
+  \draw[arr] (magma) -- node[left,sloped]{\scriptsize $+$ ассоциативность} (semi);
+  \draw[arr] (semi) -- node[left]{\scriptsize $+$ нейтр. эл.} (monoid);
+  \draw[arr] (monoid) -- node[left]{\scriptsize $+$ симм. эл.} (groupL);
+  \draw[arr] (magma) -- node[right,sloped]{\scriptsize $+$ деление} (quasi);
+  \draw[arr] (quasi) -- node[right]{\scriptsize $+$ нейтр. эл.} (loop);
+  \draw[arr] (loop) -- node[right]{\scriptsize $+$ ассоциативность} (groupR);
+\end{tikzpicture}
+\end{center}
+
+\begin{definition}
+Абелева группа --- группа с коммутативной операцией.
+\end{definition}
+
+\begin{definition}
+Пусть заданы группы
+\(\langle G,\cdot\rangle\) и \(\langle H,*\rangle\).
+Отображение из \(G\) в \(H\) называется гомоморфизмом групп, если
+\[
+  f(x\cdot y)=f(x)*f(y).
+\]
+\end{definition}
+
+Это условие можно изобразить диаграммой, в которой
+\(v,vg,y\in G\) переходят соответственно в
+\(f(v),f(vg),f(y)\in H\):
+
+\begin{center}
+\begin{tikzpicture}[>=Latex,node distance=18mm]
+  \node[draw,minimum width=20mm,minimum height=25mm,label=above:$G$] (G) {};
+  \node[draw,minimum width=20mm,minimum height=25mm,right=38mm of G,label=above:$H$] (H) {};
+  \node at ($(G.center)+(0,7mm)$) (v) {$v$};
+  \node at (G.center) (vg) {$vg$};
+  \node at ($(G.center)+(0,-7mm)$) (y) {$y$};
+  \node at ($(H.center)+(0,7mm)$) (fv) {$f(v)$};
+  \node at (H.center) (fvg) {$f(vg)$};
+  \node at ($(H.center)+(0,-7mm)$) (fy) {$f(y)$};
+  \draw[->] (v) -- (fv); \draw[->] (vg) -- (fvg); \draw[->] (y) -- (fy);
+\end{tikzpicture}
+\end{center}
+
+\begin{definition}
+Изоморфизм --- биективный гомоморфизм. Автоморфизм --- изоморфизм
+алгебраической структуры на себя. Эндоморфизм --- гомоморфизм
+структуры в себя.
+\end{definition}
+
+\begin{definition}
+Порядок группы (мощность) --- количество её элементов.
+\end{definition}
+
+\begin{example}
+\[
+  |\Z|=\infty,\qquad |\Z_n|=n,\qquad |\R^*|=\infty.
+\]
+\end{example}
+
+\begin{definition}
+Порядок элемента \(g\in G\) --- минимальное \(n\in\N\), для которого
+\(g^n=1\). Если такого $n$ нет, порядок считается бесконечным.
+\end{definition}
+
+Для аддитивной записи это означает:
+\[
+  \ord(g)\text{ в }\langle\R,+\rangle,\qquad
+  \ord(0)=1,\qquad \ord(v)=\infty,
+\]
+\[
+  \underbrace{g+g+\cdots+g}_{n\text{ раз}}=ng,\qquad ng=0,
+\]
+и маленькая цепочка \(1\cdot0=0,\ 1\cdot g=g\).
+
+\begin{definition}
+Подсистема получается выбором подмножества носителя, замкнутого
+относительно операций исходной системы.
+\end{definition}
+
+
+\begin{definition}
+Пусть дана группа \(\langle G,*\rangle\). Её подсистема
+\(\langle H,*\rangle\) называется подгруппой, если она сама является
+группой относительно той же операции; при этом \(H\subseteq G\).
+\end{definition}
+
+\begin{proposition}
+Подмножество \(H\subseteq G\) является подгруппой, если:
+\begin{enumerate}[label=\arabic*)]
+  \item \(H\) замкнута относительно групповой операции;
+  \item \(v\in H\Rightarrow v^{-1}\in H\);
+  \item \(e\in H\).
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Ассоциативность наследуется от $G$, а три перечисленных условия дают
+замкнутую операцию, нейтральный элемент и обратный элемент для каждого
+элемента $H$. Поэтому $H$ является группой относительно ограничения
+операции $G$.
+\end{proof}
+
+\begin{definition}
+Идемпотент --- элемент группоида, удовлетворяющий равенству \(v^2=v\).
+\end{definition}
+
+\begin{definition}
+Инволюция --- элемент моноида, удовлетворяющий равенству \(v^2=e\).
+\end{definition}
+
+\section{Группа перестановок}
+
+\(S_n\) --- группа перестановок на \(n\) точках. Например, перестановку
+трёх элементов можно представить стрелочной диаграммой:
+
+\begin{center}
+\begin{tikzpicture}[>=Latex,x=10mm,y=8mm]
+  \foreach \x/\lab in {0/1,1/2,2/3}{\node (t\x) at (\x,1) {$\lab$};}
+  \foreach \x/\lab in {0/1,1/2,2/3}{\node (b\x) at (\x,0) {$\lab$};}
+  \draw[->] (t0) -- (b1); \draw[->] (t1) -- (b2); \draw[->] (t2) -- (b0);
+\end{tikzpicture}
+\qquad «полная запись»
+\end{center}
+
+\[
+  |S_n|=n!.
+\]
+
+\begin{definition}
+Циклическая запись перестановки перечисляет последовательно элементы
+каждой её орбиты. Например,
+
+\[
+\sigma=
+\begin{pmatrix}
+1&2&3&4&5&6&7&8&9&10\\
+3&10&1&5&4&9&7&2&6&8
+\end{pmatrix}
+=(1\ 3)(2\ 10\ 8)(4\ 5)(6\ 9)(7).
+\]
+\end{definition}
+
+Запись $(7)$ означает неподвижную точку $7\mapsto7$.
+
+\begin{definition}
+Длина цикла --- количество входящих в него элементов.
+\end{definition}
+
+\begin{lemma}
+Порядок цикла длины \(k\) равен \(k\).
+\end{lemma}
+
+\begin{proof}
+Каждое применение цикла переводит элемент в следующий элемент цикла.
+После $k$ применений все элементы возвращаются на свои места, а раньше
+этого ни один выбранный элемент не возвращается в исходную позицию.
+\end{proof}
+
+\begin{definition}
+Циклы называются независимыми, если множества
+перемещаемых элементов не пересекаются.
+\end{definition}
+
+\begin{theorem}
+Любая перестановка раскладывается в произведение независимых циклов.
+Такое разложение единственно с точностью до порядка множителей.
+\end{theorem}
+
+
+\begin{proof}
+Для каждого элемента $i$ рассмотрим последовательность
+\[
+  i,\sigma(i),\sigma^2(i),\ldots.
+\]
+Так как множество конечно, последовательность впервые возвращается к
+$i$ и образует цикл. Орбиты различных элементов либо совпадают, либо не
+пересекаются, поэтому перестановка является произведением полученных
+независимых циклов. Орбиты определяются самой перестановкой, что даёт
+единственность с точностью до порядка циклов и циклического сдвига
+записи внутри каждого из них.
+\end{proof}
+
+\begin{proposition}
+Независимые циклы коммутируют.
+\end{proposition}
+
+\begin{proof}
+На каждом элементе действует не более одного из двух независимых циклов.
+Поэтому результат их последовательного применения не зависит от
+порядка.
+\end{proof}
+
+\begin{definition}
+Транспозиция --- цикл длины \(2\), \((i\ j)\).
+\end{definition}
+
+\begin{definition}
+Фундаментальная транспозиция --- перестановка соседних элементов.
+\end{definition}
+
+\begin{lemma}
+Любая перестановка раскладывается в произведение транспозиций.
+\end{lemma}
+
+\begin{proof}
+Достаточно разложить каждый независимый цикл. Для цикла имеются,
+например, два разложения:
+\[
+  (i_1\ i_2\ i_3\ldots i_n)
+  =(i_1\ i_2)(i_2\ i_3)\cdots(i_{n-1}\ i_n),
+\]
+\[
+  (i_1\ i_n)(i_1\ i_{n-1})\cdots(i_1\ i_3)(i_1\ i_2).
+\]
+\end{proof}
+
+\begin{definition}
+Для перестановки
+\[
+  \sigma=
+  \begin{pmatrix}
+  1&2&3&\cdots&n\\
+  i_1&i_2&i_3&\cdots&i_n
+  \end{pmatrix}
+\]
+пара индексов \(k<\ell\), для которой \(i_k>i_\ell\), образует
+инверсию. Количество инверсий обозначается \(\inv(\sigma)\).
+\end{definition}
+
+\begin{example}
+\[
+  \sigma=
+  \begin{pmatrix}
+  1&2&3&4&5\\
+  2&5&4&1&3
+  \end{pmatrix}
+\]
+На полях инверсии подсчитаны по строкам:
+
+\begin{center}
+\begin{tabular}{c@{$\;-\;$}l}
+  \(i_1=2\) & \(1\) инверсия;\\
+  \(i_2=5\) & \(3\) инверсии;\\
+  \(i_3=4\) & \(2\) инверсии;\\
+  \(i_4=1\) & \(0\) инверсий,
+\end{tabular}
+\qquad поэтому \(\inv(\sigma)=6\).
+\end{center}
+\end{example}
+
+\begin{definition}
+Знак перестановки определяется формулой
+\[
+  \sgn(\sigma)=(-1)^{\inv(\sigma)}.
+\]
+Чётность перестановки --- чётность числа инверсий.
+\end{definition}
+
+\begin{lemma}
+Фундаментальная транспозиция является нечётной перестановкой.
+\end{lemma}
+
+Следующая схема иллюстрирует фундаментальную транспозицию
+\(\operatorname{swap}(1,5)\):
+элементы между \(i\)-м и \(j\)-м местами сравниваются попарно; справа
+учитываются инверсии с промежуточными элементами.
+
+\begin{center}
+\begin{tikzpicture}[x=11mm,y=7mm,>=Latex]
+  \foreach \x/\v in {0/1,1/2,2/3,3/4,4/5}{
+    \node[draw,circle,inner sep=1.2pt] (a\x) at (\x,1) {\scriptsize\v};
+  }
+  \foreach \x/\v in {0/5,1/2,2/3,3/4,4/1}{
+    \node[draw,circle,inner sep=1.2pt] (b\x) at (\x,0) {\scriptsize\v};
+  }
+  \draw[->,bend left=18] (a0) to (b4);
+  \draw[->,bend right=18] (a4) to (b0);
+  \node[anchor=west] at (5.2,0.5) {\(\operatorname{swap}(1,5)\)};
+\end{tikzpicture}
+\end{center}
+
+Под рисунком в исходной записи стоит
+\(j-2i-1=2(j-i+1)+1\in2\N+1\)
+\uncertain{промежуточная формула повреждена}.
+
+\begin{proof}
+При $i<j$ транспозицию $(i\ j)$ можно разложить в соседние
+транспозиции:
+\[
+  (i\ j)
+  =(i\ i+1)\cdots(j-2\ j-1)(j-1\ j)
+   (j-2\ j-1)\cdots(i\ i+1).
+\]
+Здесь $2(j-i)-1$ множителей, то есть нечётное число. Следовательно,
+фундаментальная транспозиция нечётна.
+\end{proof}
+
+\begin{editorialnote}
+Именно число $2(j-i)-1$, а не повреждённая промежуточная запись,
+согласуется с изображённым разложением. Вывод конспекта сохраняется:
+любая перестановка раскладывается в произведение фундаментальных
+транспозиций.
+\end{editorialnote}
+
+
+
+\begin{theorem}
+Для любых $\sigma,\pi\in S_n$
+\[
+  \sgn(\sigma\pi)=\sgn(\sigma)\sgn(\pi).
+\]
+\end{theorem}
+
+\begin{proof}
+Умножение справа на соседнюю транспозицию меняет местами два соседних
+значения перестановки. Их взаимный порядок меняется, а порядок каждой
+из них относительно остальных значений сохраняет суммарную чётность.
+Поэтому число инверсий меняет чётность и знак умножается на $-1$.
+
+Разложим $\pi$ в произведение $\ell$ соседних транспозиций. Последовательно
+применяя сказанное сначала к единичной перестановке, а затем к $\sigma$,
+получаем
+\[
+  \sgn(\pi)=(-1)^\ell,\qquad
+  \sgn(\sigma\pi)=(-1)^\ell\sgn(\sigma)
+  =\sgn(\sigma)\sgn(\pi).
+\]
+\end{proof}
+
+\begin{corollary}
+$\sgn(\sigma^{-1})=\sgn(\sigma)$.
+\end{corollary}
+
+\begin{proof}
+$\sigma\sigma^{-1}=\sigma^{-1}\sigma=\eps$, поэтому
+$1=\sgn(\eps)=\sgn(\sigma)\sgn(\sigma^{-1})$. Оба сомножителя равны
+$\pm1$, откуда следует утверждение.
+\end{proof}
+
+\begin{corollary}
+Чётность цикла длины $k$ совпадает с чётностью числа $k-1$.
+\end{corollary}
+
+\begin{proof}
+Цикл раскладывается в $k-1$ транспозиций:
+\[
+  (a_1\,a_2\,\ldots\,a_k)
+  =(a_1\,a_k)(a_1\,a_{k-1})\cdots(a_1\,a_2).
+\]
+По мультипликативности знака его знак равен $(-1)^{k-1}$.
+\end{proof}
+
+Пусть перестановка разложена в $s$ независимых циклов длины
+$k_1,\ldots,k_s$ и при этом переставляет $n=k_1+\cdots+k_s$ элементов.
+Тогда
+\[
+  (k_1-1)+\cdots+(k_s-1)=n-s.
+\]
+
+\begin{definition}
+Дефектом перестановки называется число
+\[
+  d(\sigma)=n-s,
+\]
+где $n$ --- число переставляемых элементов, а $s$ --- число независимых
+циклов в её циклическом разложении. Следовательно,
+$\sgn(\sigma)=(-1)^{d(\sigma)}$.
+\end{definition}
+
+\begin{theorem}
+Умножение перестановки на транспозицию изменяет её чётность.
+\end{theorem}
+
+В доказательстве рассматриваются четыре возможных положения точек $i,j$
+транспозиции $(i\ j)$ относительно циклов перестановки.
+
+
+\begin{proof}
+При умножении на $(i\ j)$ возможны четыре случая.
+\begin{enumerate}[label=\arabic*)]
+  \item Ни $i$, ни $j$ не входят в прежние циклы. Добавляются два
+  переставляемых элемента и один цикл, поэтому дефект возрастает на один.
+  \item $i$ и $j$ находятся в разных циклах. Эти циклы сливаются в один;
+  число циклов уменьшается на один, поэтому дефект возрастает на один.
+  \item $i$ и $j$ находятся в одном цикле. Цикл распадается на два;
+  число циклов возрастает на один, поэтому дефект уменьшается на один.
+  \item Только одна из точек $i,j$ входит в цикл. Добавляется один
+  переставляемый элемент, число циклов не меняется, поэтому дефект
+  возрастает на один.
+\end{enumerate}
+Во всех случаях чётность дефекта меняется.
+\end{proof}
+
+\begin{theorem}[Кэли]
+Любая конечная группа порядка $n$ изоморфна некоторой подгруппе группы
+$S_n$.
+\end{theorem}
+
+\begin{proof}
+Пусть $G$ --- группа, $|G|=n$, и $a\in G$. Рассмотрим левое
+преобразование
+\[
+  L_a\colon G\to G,\qquad g\mapsto ag.
+\]
+Если $e,g_1,\ldots,g_{n-1}$ --- все элементы $G$, то
+$a,ag_1,\ldots,ag_{n-1}$ --- те же элементы, возможно, в другом порядке.
+Действительно, из $ag_i=ag_j$ после умножения слева на $a^{-1}$ следует
+$g_i=g_j$. Значит, $L_a$ --- биекция, то есть перестановка элементов $G$.
+
+
+Для $a,b\in G$ имеем
+\[
+  L_{ab}(g)=(ab)g=a(bg)=L_a(L_b(g)),
+\]
+то есть $L_{ab}=L_a\circ L_b$, $L_e=\mathrm{id}_G$ и
+$(L_a)^{-1}=L_{a^{-1}}$.
+
+Множество
+\[
+  H=\{L_e,L_{g_1},\ldots,L_{g_{n-1}}\}\subseteq S_n
+\]
+замкнуто относительно композиции и является группой. Отображение
+\[
+\varphi\colon G\to H,\qquad a\mapsto L_a,
+\]
+биективно и сохраняет операцию, поэтому это искомый изоморфизм.
+\end{proof}
+
+\section{Классы эквивалентности и факторгруппы}
+
+Рассмотрим аддитивную группу $\langle\Z_n,+\rangle$. Для $x,y\in\Z$
+пишут
+\[
+  x\equiv y\pmod n
+  \quad\Longleftrightarrow\quad
+  n\mid(x-y).
+\]
+Это отношение рефлексивно, симметрично и транзитивно, следовательно,
+является отношением эквивалентности. Оно разбивает $\Z$ на
+непересекающиеся классы эквивалентности. Например, при $n=3$ получаются
+три класса:
+\[
+\begin{array}{c|ccc}
+ & [0]&[1]&[2]\\ \hline
+\text{представители}&\ldots,-3,0,3,6,9,\ldots&
+\ldots,-2,1,4,7,10,\ldots&
+\ldots,-1,2,5,8,11,\ldots
+\end{array}
+\]
+
+\begin{definition}
+Множество классов эквивалентности называется фактор-множеством.
+\end{definition}
+
+
+Пусть теперь $H\leq G$. Определим
+\[
+  g_1\equiv g_2\pmod H
+  \quad\Longleftrightarrow\quad
+  g_1^{-1}g_2\in H,
+\]
+то есть ``частное'' элементов лежит в $H$.
+
+Это отношение эквивалентности:
+\begin{enumerate}[label=\arabic*)]
+  \item $g^{-1}g=e\in H$;
+  \item если $g_1^{-1}g_2\in H$, то
+  $(g_1^{-1}g_2)^{-1}=g_2^{-1}g_1\in H$;
+  \item если $g_1^{-1}g_2\in H$ и $g_2^{-1}g_3\in H$, то
+  \[
+    (g_1^{-1}g_2)(g_2^{-1}g_3)=g_1^{-1}g_3\in H.
+  \]
+\end{enumerate}
+Следовательно, это отношение разбивает $G$ на непересекающиеся классы
+эквивалентности.
+
+\begin{definition}
+Левый и правый смежные классы подгруппы $H$ имеют вид
+\[
+  gH=\{gh\mid h\in H\},
+  \qquad
+  Hg=\{hg\mid h\in H\}.
+\]
+\end{definition}
+
+Смежные классы обладают следующими свойствами:
+\begin{enumerate}[label=\arabic*)]
+  \item левые (соответственно правые) смежные классы образуют разбиение
+  группы $G$;
+  \item отображение $H\to gH$, $h\mapsto gh$, является биекцией, поэтому
+  $|H|=|gH|$.
+\end{enumerate}
+
+
+Множество левых смежных классов обозначается $G/H$.
+
+Разбиение группы \(G\) на смежные классы можно изобразить полосами;
+класс \(H\) содержит \(e\), а класс \(gH\) --- элемент \(g\):
+
+\begin{center}
+\begin{tikzpicture}[x=12mm,y=9mm]
+  \draw[thick] (0,0) rectangle (5,2.4);
+  \draw (1.4,0) -- (1.4,2.4);
+  \draw (3.2,0) -- (3.2,2.4);
+  \node at (0.7,2.65) {$H$};
+  \node at (2.3,-0.3) {$gH$};
+  \node at (4.55,2.65) {$G$};
+  \fill (0.7,1.65) circle (1.3pt) node[left] {$e$};
+  \fill (2.3,1.1) circle (1.3pt) node[right] {$g$};
+  \foreach \yy in {0.35,0.65,0.95,1.25,1.55,1.85,2.15}
+    \draw[->,gray] (0.8,\yy) -- (2.15,\yy);
+\end{tikzpicture}
+\end{center}
+
+\begin{theorem}[Лагранжа]
+Если $G$ --- конечная группа и $H\leq G$, то
+\[
+  |G|=|H|\,|G/H|.
+\]
+\end{theorem}
+
+\begin{proof}
+Левые смежные классы подгруппы $H$ попарно не пересекаются и образуют
+разбиение $G$. Для каждого $g\in G$ отображение
+$H\to gH$, $h\mapsto gh$, биективно, поэтому каждый класс содержит
+$|H|$ элементов. Число классов равно $|G/H|$. Складывая их мощности,
+получаем $|G|=|H|\,|G/H|$.
+\end{proof}
+
+\begin{definition}
+Индекс подгруппы $H$ --- число её смежных классов; он обозначается
+$[G:H]$.
+\end{definition}
+
+\begin{definition}
+Подгруппа $H\leq G$ называется нормальной, если для любого $g\in G$
+\[
+  gH=Hg.
+\]
+Обозначение: $H\trianglelefteq G$.
+\end{definition}
+
+Следующие условия равносильны:
+\begin{enumerate}[label=\arabic*)]
+  \item $H\trianglelefteq G$;
+  \item $gHg^{-1}=H$ для всех $g\in G$;
+  \item $ghg^{-1}\in H$ для всех $g\in G$ и $h\in H$.
+\end{enumerate}
+
+\begin{definition}
+Элемент $ghg^{-1}$ называется элементом, сопряжённым с $h$ при помощи
+$g$. Сопряжённость является отношением эквивалентности.
+\end{definition}
+
+\begin{definition}
+Факторгруппа группы $G$ по нормальной подгруппе $H$ --- множество
+смежных классов $G/H$ с операцией
+\[
+  (aH)(bH)=(ab)H,
+  \qquad
+  AB=\{ab\mid a\in A,\ b\in B\}.
+\]
+\end{definition}
+
+Пусть $\varphi\colon G\to H$ --- гомоморфизм. Тогда
+\[
+  \Im\varphi=\{\varphi(g)\mid g\in G\}\leq H,
+  \qquad
+  \Ker\varphi=\{g\in G\mid\varphi(g)=e\}\trianglelefteq G.
+\]
+Действительно, образ содержит нейтральный элемент и замкнут относительно
+произведений и обратных элементов; для ядра нормальность следует из
+\[
+  \varphi(aga^{-1})=
+  \varphi(a)\varphi(g)\varphi(a)^{-1}=e
+  \quad(g\in\Ker\varphi).
+\]
+
+
+\begin{definition}
+Для $H\trianglelefteq G$ канонической проекцией называется отображение
+\[
+  \pi\colon G\to G/H,
+  \qquad g\mapsto gH.
+\]
+Оно является гомоморфизмом, причём $\Im\pi=G/H$ и $\Ker\pi=H$.
+\end{definition}
+
+\begin{theorem}[Основная теорема о гомоморфизме]
+Пусть $\varphi\colon G\to H$ --- гомоморфизм. Тогда существует
+изоморфизм
+\[
+  f\colon G/\Ker\varphi\xrightarrow{\sim}\Im\varphi,
+  \qquad
+  f(g\Ker\varphi)=\varphi(g),
+\]
+и $\varphi=f\circ\pi$, где $\pi$ --- каноническая проекция.
+\end{theorem}
+
+\begin{proof}
+Положим $K=\Ker\varphi$. Для $h=\varphi(g)\in\Im\varphi$ полный
+прообраз равен
+\[
+  \varphi^{-1}(h)=gK.
+\]
+В самом деле, любой $g'\in G$ записывается как $g'=gk$ с
+$k=g^{-1}g'$. Тогда
+\[
+  \varphi(g')=\varphi(g)\varphi(k)=h
+  \quad\Longleftrightarrow\quad
+  \varphi(k)=e
+  \quad\Longleftrightarrow\quad k\in K.
+\]
+Следовательно, элементы образа взаимно однозначно соответствуют смежным
+классам ядра, а указанное отображение $f$ является изоморфизмом.
+В частности, для конечных групп
+\[
+  |G|=|\Im\varphi|\,|\Ker\varphi|.
+\]
+\end{proof}
+
+Теорему иллюстрирует схема: группа \(G\) разбита на классы \(gK\), \(K\)
+и другие классы; все точки одного класса отображаются в один элемент
+образа. Отмечены \(g\mapsto h\), \(K\mapsto e\) и
+\(G\mapsto\Im\varphi\):
+
+\begin{center}
+\begin{tikzpicture}[>=Latex,x=10mm,y=8mm]
+  \draw[thick] (0,1.2) rectangle (5,4);
+  \draw (1.5,1.2) -- (1.5,4);
+  \draw (3,1.2) -- (3,4);
+  \node at (5.25,3.85) {$G$};
+  \node at (0.75,4.25) {$gK$};
+  \node at (2.25,4.25) {$K$};
+  \fill (0.75,2.8) circle (1.2pt) node[left] {$g$};
+  \fill (2.25,2.8) circle (1.2pt) node[right] {$e$};
+  \draw[thick] (2.5,0) ellipse (3.6 and 0.75);
+  \node at (6.35,0) {$H$};
+  \node at (4.7,0.3) {$\Im\varphi$};
+  \fill (0.7,0) circle (1.2pt) node[below] {$h$};
+  \fill (2.25,0) circle (1.2pt) node[below] {$e$};
+  \draw[->] (0.75,2.8) -- (0.7,0.15);
+  \draw[->] (2.25,2.8) -- (2.25,0.15);
+  \draw[->] (4.15,2.8) -- (4.1,0.15);
+\end{tikzpicture}
+\end{center}
+
+
+\chapter{Кольца и поля}
+
+\begin{definition}
+Кольцом называется алгебраическая система $\langle R,+,\cdot\rangle$ с
+двумя бинарными операциями, удовлетворяющая условиям:
+\begin{enumerate}[label=\arabic*)]
+  \item $\langle R,+\rangle$ --- абелева группа;
+  \item для любых $x,y,z\in R$
+  \[
+    (x+y)z=xz+yz,
+    \qquad
+    x(y+z)=xy+xz.
+  \]
+\end{enumerate}
+\end{definition}
+
+\begin{definition}
+Подмножество $L\subseteq R$ называется подкольцом, если
+\begin{enumerate}[label=\arabic*)]
+  \item $L$ является подгруппой аддитивной группы кольца $R$;
+  \item $L$ замкнуто относительно умножения.
+\end{enumerate}
+Обозначение: $L\leq R$.
+\end{definition}
+
+\begin{definition}
+Элемент $x\in R$ называется обратимым, если существует $x^{-1}$, для
+которого $xx^{-1}=x^{-1}x=1$. Множество всех обратимых элементов кольца
+$R$ обозначается $R^*$.
+\end{definition}
+
+\begin{definition}
+Поле --- коммутативное ассоциативное кольцо с единицей, в котором каждый
+ненулевой элемент обратим.
+\end{definition}
+
+В поле нет нетривиальных делителей нуля: если $ab=0$ и $b\ne0$, то после
+умножения на $b^{-1}$ получаем $a=0$.
+
+\begin{definition}
+Подмножество $K$ поля $F$ называется подполем, если
+\begin{enumerate}[label=\arabic*)]
+  \item $1\in K$;
+  \item $x\in K$, $x\ne0\Rightarrow x^{-1}\in K$;
+  \item $K$ является подкольцом $F$.
+\end{enumerate}
+\end{definition}
+
+\begin{definition}
+Порядок поля --- мощность его носителя.
+\end{definition}
+
+\begin{definition}
+Гомоморфизм колец $\varphi\colon R\to Q$ сохраняет обе операции:
+\[
+  \varphi(x+y)=\varphi(x)+\varphi(y),
+  \qquad
+  \varphi(xy)=\varphi(x)\varphi(y).
+\]
+\end{definition}
+
+
+\begin{definition}
+Характеристикой поля $F$ называется наименьшее $n\in\N$, для которого
+\[
+  \underbrace{1+\cdots+1}_{n}=0.
+\]
+Если такого $n$ нет, полагают $\operatorname{char}F=0$.
+\end{definition}
+
+\begin{theorem}
+Если $\operatorname{char}F>0$, то $\operatorname{char}F$ --- простое
+число.
+\end{theorem}
+
+\begin{proof}
+Пусть $\operatorname{char}F=n$ и $n=km$, где $1<k,m<n$. Тогда
+\[
+  \underbrace{1+\cdots+1}_{km}
+  =\left(\underbrace{1+\cdots+1}_{k}\right)
+   \left(\underbrace{1+\cdots+1}_{m}\right)=0.
+\]
+В поле нет нетривиальных делителей нуля, поэтому один из множителей равен
+нулю, что противоречит минимальности $n$.
+\end{proof}
+
+\section{Кольцо вычетов}
+
+Группа классов вычетов
+\[
+  \Z_n=\{\bar0,\bar1,\bar2,\ldots,\overline{n-1}\}
+  \cong\Z/n\Z
+\]
+становится кольцом, если определить
+\[
+  \bar a+\bar b=\overline{a+b},
+  \qquad
+  \bar a\bar b=\overline{ab}.
+\]
+Операции корректно определены: из $a_i\equiv b_i\pmod n$ следует
+\[
+  a_1+a_2\equiv b_1+b_2\pmod n,
+  \qquad
+  a_1a_2\equiv b_1b_2\pmod n.
+\]
+
+\begin{theorem}
+$\Z_n$ является полем тогда и только тогда, когда $n$ --- простое число.
+\end{theorem}
+
+\begin{proof}
+Если $n=km$ составно, где $1<k,m<n$, то
+$\bar k\ne\bar0$, $\bar m\ne\bar0$, но $\bar k\bar m=\bar0$; значит,
+в $\Z_n$ есть нетривиальные делители нуля, и оно не является полем.
+
+
+Пусть теперь $n$ простое и $\bar a\ne\bar0$. Рассмотрим
+\[
+  \bar a,\ 2\bar a,\ 3\bar a,\ldots,(n-1)\bar a,\bar0.
+\]
+Это все элементы $\Z_n$: если $0\leq k<\ell<n$ и
+$k\bar a=\ell\bar a$, то $n\mid(k-\ell)a$. Из простоты $n$ и
+$n\nmid a$ следует $n\mid(k-\ell)$, что невозможно. Следовательно,
+среди указанных кратных встречается $\bar1$, и у $\bar a$ существует
+обратный элемент.
+\end{proof}
+
+\begin{theorem}[Бином Ньютона в поле характеристики $p$]
+Если $\operatorname{char}F=p>0$, то для любых $a,b\in F$
+\[
+  (a+b)^p=a^p+b^p.
+\]
+\end{theorem}
+
+\begin{proof}
+В разложении
+\[
+  (a+b)^p=\sum_{k=0}^{p}\binom pk a^k b^{p-k}
+\]
+все промежуточные коэффициенты делятся на $p$, поскольку
+\[
+  \binom pk=\frac{p!}{k!(p-k)!},\qquad 0<k<p,
+\]
+и $p$ простое. В поле характеристики $p$ они равны нулю.
+\end{proof}
+
+\begin{corollary}[Малая теорема Ферма]
+Для $a\in\Z$ и простого $p$
+\[
+  a^p\equiv a\pmod p.
+\]
+Если $a$ взаимно просто с $p$, то
+\[
+  a^{p-1}\equiv1\pmod p.
+\]
+\end{corollary}
+
+\begin{proof}
+В $\Z_p$ первое равенство следует из предыдущей теоремы (или из того,
+что $\bar a$ есть сумма $a$ единиц), а второе --- умножением на
+$\bar a^{-1}$.
+\end{proof}
+
+
+\section{Поле комплексных чисел}
+
+На множестве $\R^2$ определим операции
+\[
+  (a,b)+(c,d)=(a+c,b+d),
+\]
+\[
+  (a,b)(c,d)=(ac-bd,ad+bc).
+\]
+Относительно этих операций $\R^2$ является полем: нуль равен $(0,0)$,
+единица --- $(1,0)$, умножение коммутативно и ассоциативно. Для
+$(a,b)\ne(0,0)$
+\[
+  (a,b)^{-1}=\left(\frac{a}{a^2+b^2},-
+  \frac{b}{a^2+b^2}\right).
+\]
+Действительно, из $(a,b)(x,y)=(1,0)$ получаем систему
+\[
+  ax-by=1,\qquad ay+bx=0,
+\]
+откуда следуют указанные $x,y$.
+
+Полученное поле называется полем комплексных чисел $\C$. Поле $\R$
+вкладывается в него отображением
+\[
+  \R\hookrightarrow\C,
+  \qquad r\mapsto(r,0).
+\]
+Мнимая единица $i=(0,1)$ удовлетворяет $i^2=(-1,0)=-1$. Поэтому
+\[
+  (a,b)=a(1,0)+b(0,1)=a+bi.
+\]
+Это алгебраическая форма комплексного числа $z=a+bi$, где
+$a=\Re z$, $b=\Im z$.
+
+\begin{definition}
+Сопряжённое число: $\bar z=a-bi$. Модуль и норма:
+\[
+  |z|=\sqrt{a^2+b^2},
+  \qquad N(z)=|z|^2=a^2+b^2=z\bar z.
+\]
+\end{definition}
+
+\begin{explanation}
+Геометрически $z$ и $\bar z$ симметричны относительно вещественной оси,
+а модуль $|z|$ равен длине радиус-вектора:
+\end{explanation}
+
+\begin{center}
+\begin{tikzpicture}[>=Latex,scale=0.9]
+  \draw[->] (-0.4,0) -- (4.2,0) node[right] {$\Re(z)$};
+  \draw[->] (0,-2.2) -- (0,2.5) node[above] {$\Im(z)$};
+  \draw[->,thick] (0,0) -- (2.8,1.6) node[above right] {$z$};
+  \draw[->,thick] (0,0) -- (2.8,-1.6) node[below right] {$\bar z$};
+  \draw[dashed] (2.8,1.6) -- (2.8,-1.6);
+  \node[above,sloped] at (1.35,0.95) {$|z|$};
+\end{tikzpicture}
+\end{center}
+
+
+Сопряжение является автоморфизмом поля $\C$:
+\[
+  \overline{z_1+z_2}=\bar z_1+\bar z_2,
+  \qquad
+  \overline{z_1z_2}=\bar z_1\bar z_2.
+\]
+
+\begin{definition}
+Тригонометрическая форма комплексного числа:
+\[
+  z=a+bi
+   =\sqrt{a^2+b^2}
+    \left(\frac{a}{\sqrt{a^2+b^2}}
+    +i\frac{b}{\sqrt{a^2+b^2}}\right)
+   =|z|(\cos\varphi+i\sin\varphi)
+   =\rho(\cos\varphi+i\sin\varphi).
+\]
+\end{definition}
+
+
+\chapter{Кольцо многочленов}
+
+Пусть $R$ --- кольцо. Кольцо $R[x]$ состоит из последовательностей
+\[
+  (a_0,a_1,a_2,\ldots),\qquad a_i\in R,
+\]
+в которых лишь конечное число элементов отлично от нуля. Операции
+задаются формулами
+\[
+  (a_0,a_1,\ldots)+(b_0,b_1,\ldots)
+  =(a_0+b_0,a_1+b_1,\ldots),
+\]
+\[
+  (a_0,a_1,\ldots)(b_0,b_1,\ldots)
+  =(c_0,c_1,\ldots),
+  \qquad
+  c_k=\sum_{i+j=k}a_i b_j=\sum_{i=0}^{k}a_i b_{k-i}.
+\]
+Например,
+\[
+  c_0=a_0b_0,
+  \quad c_1=a_0b_1+a_1b_0,
+  \quad c_2=a_0b_2+a_1b_1+a_2b_0.
+\]
+
+Если $R$ --- кольцо, то $R[x]$ тоже кольцо. Если $R$ ассоциативно,
+коммутативно или имеет единицу, то тем же свойством обладает $R[x]$.
+Если $R$ --- поле, $R[x]$ всё же, вообще говоря, не поле.
+
+Последовательность $(a_0,a_1,a_2,\ldots)$ записывают как
+\[
+  a_0+a_1x+a_2x^2+\cdots.
+\]
+При этом
+\[
+  1=(1,0,0,\ldots),\quad
+  x=(0,1,0,\ldots),\quad
+  x^2=(0,0,1,0,\ldots).
+\]
+
+\begin{definition}
+Степень ненулевого многочлена --- номер его старшего ненулевого
+коэффициента. Полагают $\deg0=-\infty$.
+\end{definition}
+
+Для $f,g\in R[x]$
+\[
+  \deg(f+g)\leq\max\{\deg f,\deg g\},
+  \qquad
+  \deg(fg)\leq\deg f+\deg g.
+\]
+
+
+\begin{definition}
+Гомоморфизм колец
+$f\colon\langle R,+,\cdot\rangle\to\langle Q,+,\cdot\rangle$ сохраняет
+сложение и умножение:
+\[
+  f(x+y)=f(x)+f(y),
+  \qquad f(xy)=f(x)f(y).
+\]
+\end{definition}
+
+\begin{definition}
+Для $c\in R$ отображение подстановки (эвалюации)
+\[
+  \operatorname{ev}_c\colon R[x]\to R,
+  \qquad f\mapsto f(c),
+\]
+является гомоморфизмом колец. Оно позволяет рассматривать многочлен как
+функцию. При каждой повторной подстановке получается то же значение.
+\end{definition}
+
+\begin{editorialnote}
+Формулировка верна для коммутативного кольца $R$; в некоммутативном
+случае достаточно потребовать, чтобы $c$ лежал в центре $R$. Без этого
+равенство $(fg)(c)=f(c)g(c)$ может нарушаться.
+\end{editorialnote}
+
+\begin{definition}
+Число $c$ называется корнем многочлена $f$, если $f(c)=0$.
+\end{definition}
+
+Для многочлена с вещественными коэффициентами вместе с комплексным корнем
+$c$ корнем является и $\bar c$.
+
+\begin{definition}
+Поле называется алгебраически замкнутым, если любой многочлен положительной
+степени над ним имеет корень.
+\end{definition}
+
+\begin{theorem}[Основная теорема алгебры]
+Поле $\C$ алгебраически замкнуто.
+\end{theorem}
+
+\begin{explanation}
+Полное доказательство этой теоремы требует результатов комплексного
+анализа или топологии и выходит за рамки алгебраического материала
+первого семестра. В дальнейшем используется только её следствие: всякий
+многочлен положительной степени над $\C$ имеет комплексный корень и,
+повторяя деление на линейные множители, полностью раскладывается над
+$\C$.
+\end{explanation}
+
+
+\chapter{Кольцо квадратных матриц}
+
+Пусть $F$ --- поле. Отображение
+\[
+  A\colon I\times J\to F
+\]
+называется матрицей над $F$. Если $I=\{1,\ldots,m\}$ и
+$J=\{1,\ldots,n\}$, матрицу записывают таблицей $A=(a_{ij})$, где
+$i$ --- номер строки, $j$ --- номер столбца. Множество всех таких матриц
+обозначается $M_{m\times n}(F)$; при $m=n$ пишут $M_n(F)$.
+
+Для $A,B\in M_{m\times n}(F)$ сумма определяется покомпонентно:
+\[
+  C=A+B,\qquad c_{ij}=a_{ij}+b_{ij}.
+\]
+Если $A\in M_{m\times k}(F)$ и $B\in M_{k\times n}(F)$, то
+\[
+  C=AB\in M_{m\times n}(F),
+  \qquad
+  c_{ij}=\sum_{\ell=1}^{k}a_{i\ell}b_{\ell j}.
+\]
+
+\begin{definition}
+Транспонированная матрица $A^T$ задаётся равенством
+\[
+  (a_{ij})^T=(a_{ji}).
+\]
+\end{definition}
+
+\begin{definition}
+След квадратной матрицы --- сумма элементов главной диагонали:
+\[
+  \tr A=a_{11}+a_{22}+\cdots+a_{nn}.
+\]
+\end{definition}
+
+Имеют место равенства
+\[
+  \tr(A+B)=\tr A+\tr B,
+  \qquad
+  \tr(AB)=\tr(BA).
+\]
+
+Множество $M_n(F)$ с введёнными операциями является ассоциативным кольцом
+с единицей. В общем случае оно некоммутативно, имеет делители нуля, а
+уравнение $AX=E$ при $A\ne0$ не всегда имеет решение.
+
+
+Если размеры блоков согласованы, сложение и умножение блочных матриц
+выполняются по обычным правилам.
+
+\begin{definition}
+Матрица называется симметрической, если $A=A^T$, и кососимметрической,
+если $A=-A^T$. Две матрицы называются коммутирующими, если $AB=BA$.
+\end{definition}
+
+\section{Элементарные матрицы}
+
+Обозначим через $E_{ij}$ матричную единицу: в позиции $(i,j)$ стоит
+единица, а на остальных местах --- нули. Символ Кронекера
+\[
+  \delta_{ij}=\begin{cases}1,&i=j,\\0,&i\ne j\end{cases}
+\]
+даёт формулу
+\[
+  E_{ij}E_{k\ell}=\delta_{jk}E_{i\ell}.
+\]
+
+Три типа элементарных матриц:
+\begin{enumerate}[label=\arabic*)]
+  \item растяжение строки $i$:
+  \[
+    T_i(\lambda)=E+(\lambda-1)E_{ii};
+  \]
+  \item перестановка строк $i$ и $j$:
+  \[
+    P_{ij}=E-E_{ii}-E_{jj}+E_{ij}+E_{ji};
+  \]
+  \item прибавление к строке $i$ строки $j$, умноженной на $\lambda$:
+  \[
+    D_{ij}(\lambda)=E+\lambda E_{ij}.
+  \]
+\end{enumerate}
+Умножение матрицы слева на соответствующую элементарную матрицу выполняет
+указанное преобразование строк.
+
+
+\chapter{Евклидовы кольца}
+
+\begin{definition}
+Область целостности --- ассоциативное коммутативное кольцо с единицей и
+без делителей нуля.
+\end{definition}
+
+\begin{definition}
+Евклидово кольцо --- область целостности $R$, для которой существует
+функция
+\[
+  N\colon R\setminus\{0\}\to\N_0
+\]
+со свойствами:
+\begin{enumerate}[label=\arabic*)]
+  \item $N(fg)\geq N(f)$; равенство $N(fg)=N(f)$ имеет место тогда и
+  только тогда, когда $g$ обратим;
+  \item для любых $f,g\in R$, $g\ne0$, существуют $q,r\in R$ такие, что
+  \[
+    f=gq+r,
+  \]
+  причём либо $r=0$, либо $N(r)<N(g)$.
+\end{enumerate}
+\end{definition}
+
+В $\Z$ можно взять $N(a)=|a|$; например,
+$17=5\cdot3+2$ и $N(2)<N(5)$. В кольце многочленов над полем роль нормы
+играет степень.
+
+\begin{example}
+\[
+  x^3+2x+1=(x^2-1)(x+1)+(2x+2),
+\]
+причём $\deg(2x+2)=1<2=\deg(x^2-1)$.
+\end{example}
+
+\begin{definition}
+Неприводимый элемент --- элемент, который нельзя разложить в произведение
+необратимых элементов.
+\end{definition}
+
+\begin{definition}
+Элементы называются взаимно простыми, если их наибольший общий делитель
+обратим. Простой элемент --- необратимый ненулевой элемент области
+целостности, который нельзя представить произведением двух необратимых
+элементов.
+\end{definition}
+
+\begin{editorialnote}
+Последняя фраза дословно описывает \emph{неприводимый} элемент. Обычно
+простым называют элемент $p$, для которого
+$p\mid ab\Rightarrow p\mid a$ или $p\mid b$. В произвольной области
+целостности эти понятия могут различаться, но в евклидовом, а значит
+факториальном, кольце они совпадают.
+\end{editorialnote}
+
+\begin{definition}
+Область целостности называется факториальной, если:
+\begin{enumerate}[label=\arabic*)]
+  \item каждый ненулевой необратимый элемент раскладывается в произведение
+  неприводимых;
+  \item такое разложение единственно с точностью до порядка множителей и
+  умножения на обратимые элементы.
+\end{enumerate}
+\end{definition}
+
+
+\begin{theorem}
+Любое евклидово кольцо факториально.
+\end{theorem}
+
+\begin{proof}
+Сначала евклидов алгоритм даёт тождество Безу: для любых $a,b\in R$
+их наибольший общий делитель представим в виде $ua+vb$.
+
+Докажем существование разложения по индукции по $N(a)$. Если $a$
+неприводим, всё готово. Иначе $a=bc$, где $b$ и $c$ необратимы.
+Из свойства нормы следует $N(b)<N(a)$ и $N(c)<N(a)$, поэтому оба
+множителя раскладываются в произведения неприводимых.
+
+Покажем, что каждый неприводимый $p$ прост. Если $p\mid ab$ и
+$p\nmid a$, то $\gcd(p,a)$ обратим. По тождеству Безу
+$up+va=1$. Умножая на $b$, получаем
+$upb+vab=b$; оба слагаемых слева делятся на $p$, значит, $p\mid b$.
+
+Теперь единственность разложения следует стандартно: неприводимый
+множитель одной стороны делит произведение на другой стороне, а потому
+ассоциирован с одним из её множителей. Сокращая их, продолжаем
+индукцией.
+\end{proof}
+
+\chapter{Идеалы и факторкольца}
+
+\begin{definition}
+Аддитивная подгруппа $I$ кольца $R$ называется левым идеалом, если
+\[
+  r\in R,\ x\in I\Rightarrow rx\in I,
+\]
+и правым идеалом, если
+\[
+  r\in R,\ x\in I\Rightarrow xr\in I.
+\]
+Если левый и правый идеалы совпадают, говорят о двустороннем идеале.
+\end{definition}
+
+\begin{definition}
+Главный идеал, порождённый элементом $a$, имеет вид
+\[
+  (a)=\{ra\mid r\in R\}
+\]
+в коммутативном кольце (для односторонних идеалов порядок множителей
+учитывается).
+\end{definition}
+
+\begin{definition}
+Кольцо, в котором все идеалы главные, называется кольцом главных идеалов.
+\end{definition}
+
+\begin{definition}
+Пусть $I$ --- двусторонний идеал кольца $R$. На $R$ зададим отношение
+\[
+  a\sim b\quad\Longleftrightarrow\quad a-b\in I.
+\]
+Множество классов $R/I$ с операциями
+\[
+  (a+I)+(b+I)=(a+b)+I,\qquad
+  (a+I)(b+I)=ab+I
+\]
+называется факторкольцом $R$ по идеалу $I$.
+\end{definition}
+
+\begin{proposition}
+Операции в $R/I$ не зависят от выбора представителей классов, а
+каноническая проекция
+\[
+  \pi\colon R\to R/I,\qquad a\mapsto a+I,
+\]
+является сюръективным гомоморфизмом колец с ядром $I$.
+\end{proposition}
+
+\begin{proof}
+Если $a-a'\in I$ и $b-b'\in I$, то
+\[
+  (a+b)-(a'+b')\in I.
+\]
+Кроме того,
+\[
+  ab-a'b'=a(b-b')+(a-a')b'\in I,
+\]
+поскольку $I$ двусторонний. Значит, оба результата зависят только от
+классов. Свойства $\pi$ следуют непосредственно из определения, а
+$\pi(a)=I$ равносильно $a\in I$.
+\end{proof}
+
+\begin{explanation}
+Требование двусторонности существенно именно для умножения классов.
+Для коммутативного кольца всякий идеал автоматически двусторонний.
+\end{explanation}
+
+
+\chapter{Определитель и его приложения}
+
+\begin{definition}
+Определитель --- функция
+\[
+  \det\colon F^n\times\cdots\times F^n\to F
+\]
+от $n$ строк (или столбцов), удовлетворяющая условиям:
+\begin{enumerate}[label=\arabic*)]
+  \item полилинейность по каждому аргументу, например
+  \[
+    \det(\ldots,\alpha v+\beta w,\ldots)
+    =\alpha\det(\ldots,v,\ldots)
+     +\beta\det(\ldots,w,\ldots);
+  \]
+  \item альтернированность: если два аргумента равны, то определитель
+  равен нулю;
+  \item нормировка:
+  \[
+    \det(e_1,e_2,\ldots,e_n)=1.
+  \]
+\end{enumerate}
+\end{definition}
+
+Из полилинейности и альтернированности следует кососимметричность:
+\[
+  \det(\ldots,v,\ldots,w,\ldots)
+  =-\det(\ldots,w,\ldots,v,\ldots).
+\]
+Действительно, раскрыв
+$\det(\ldots,v+w,\ldots,v+w,\ldots)=0$, получаем, что два смешанных
+слагаемых имеют противоположные знаки. В характеристике $2$ знак ``минус''
+совпадает со знаком ``плюс'', но утверждение остаётся верным.
+
+
+\begin{theorem}[Существование и единственность определителя]
+Существует единственная функция с перечисленными свойствами, и она задаётся
+формулой Лейбница
+\[
+  \det A=\sum_{\sigma\in S_n}
+  \sgn(\sigma)\,
+  a_{\sigma(1),1}a_{\sigma(2),2}\cdots a_{\sigma(n),n}.
+\]
+\end{theorem}
+
+В каждом произведении выбирается по одному элементу из каждого столбца и
+каждой строки. Для $n=2$
+\[
+  \det\begin{pmatrix}a_{11}&a_{12}\\a_{21}&a_{22}\end{pmatrix}
+  =a_{11}a_{22}-a_{21}a_{12}.
+\]
+Полилинейность следует из распределения суммы по выбранному столбцу;
+остальные свойства проверяются непосредственно по перестановкам.
+
+\begin{proof}
+Пусть столбцы матрицы равны
+$v_j=\sum_{i=1}^{n}a_{ij}e_i$. По полилинейности любой определитель с
+заданными свойствами обязан удовлетворять
+\[
+  \det(v_1,\ldots,v_n)
+  =\sum_{i_1,\ldots,i_n}
+   a_{i_1,1}\cdots a_{i_n,n}
+   \det(e_{i_1},\ldots,e_{i_n}).
+\]
+Если два индекса совпадают, соответствующее слагаемое равно нулю.
+Поэтому остаются только наборы
+$(i_1,\ldots,i_n)=(\sigma(1),\ldots,\sigma(n))$. Переставляя базисные
+векторы в стандартный порядок, получаем
+\[
+  \det(e_{\sigma(1)},\ldots,e_{\sigma(n)})=\sgn(\sigma).
+\]
+Это доказывает единственность и приводит к формуле Лейбница.
+Обратно, правая часть формулы непосредственно полилинейна,
+альтернирована и на $(e_1,\ldots,e_n)$ равна $1$, значит, задаёт
+требуемую функцию.
+\end{proof}
+
+
+Из аксиом и формулы Лейбница следуют правила:
+\begin{enumerate}[label=\arabic*)]
+  \item $\det(A T_i(\lambda))=\lambda\det A$;
+  \item $\det(A D_{ij}(\lambda))=\det A$;
+  \item $\det(A P_{ij})=-\det A$;
+  \item $\det A=\det A^T$;
+  \item определитель треугольной матрицы равен произведению диагональных
+  элементов;
+  \item для блочно-треугольной матрицы
+  \[
+    \det\begin{pmatrix}A&*\\0&B\end{pmatrix}
+    =\det A\det B.
+  \]
+\end{enumerate}
+
+\begin{definition}
+Минор $M_{ij}$ --- определитель матрицы, полученной вычёркиванием
+$i$-й строки и $j$-го столбца. Алгебраическое дополнение
+\[
+  A_{ij}=(-1)^{i+j}M_{ij}.
+\]
+\end{definition}
+
+Разложение определителя по $i$-й строке или $j$-му столбцу имеет вид
+\[
+  \det A=\sum_{j=1}^{n}a_{ij}A_{ij}
+  =\sum_{i=1}^{n}a_{ij}A_{ij}.
+\]
+
+
+\section{Системы линейных уравнений}
+
+Квадратную систему
+\[
+\begin{cases}
+a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_n=b_1,\\
+a_{21}x_1+a_{22}x_2+\cdots+a_{2n}x_n=b_2,\\
+\hfill\vdots\\
+a_{n1}x_1+a_{n2}x_2+\cdots+a_{nn}x_n=b_n
+\end{cases}
+\]
+записывают как $Ax=b$, где $A\in M_n(F)$, $x$ --- столбец неизвестных,
+$b$ --- столбец свободных членов.
+
+\begin{theorem}[Крамера]
+Если $\det A\ne0$, то система $Ax=b$ имеет единственное решение
+\[
+  x_i=\frac{\det A_i}{\det A},
+\]
+где $A_i$ получена из $A$ заменой $i$-го столбца столбцом $b$.
+\end{theorem}
+
+\begin{proof}
+Пусть $a_1,\ldots,a_n$ --- столбцы $A$. Из $Ax=b$ следует
+$b=x_1a_1+\cdots+x_na_n$. Заменим в определителе $i$-й столбец на $b$:
+\[
+  \det A_i
+  =\det(a_1,\ldots,b,\ldots,a_n)
+  =x_i\det A.
+\]
+Все остальные слагаемые исчезают, поскольку содержат два одинаковых
+столбца. Отсюда получается формула Крамера. Единственность следует из
+обратимости $A$ при $\det A\ne0$.
+\end{proof}
+
+\begin{example}
+Для системы
+\[
+  \begin{cases}x+y=2,\\x-y=0\end{cases}
+\]
+имеем
+\[
+  \det\begin{pmatrix}1&1\\1&-1\end{pmatrix}=-2\ne0,
+  \qquad x=y=1.
+\]
+\end{example}
+
+\begin{definition}
+Матрица $A^{-1}$ называется обратной к $A$, если
+\[
+  AA^{-1}=A^{-1}A=E.
+\]
+\end{definition}
+
+Матрица обратима тогда и только тогда, когда $\det A\ne0$; при этом
+\[
+  \det A^{-1}=\frac1{\det A},
+  \qquad
+  A^{-1}=\frac1{\det A}
+  \begin{pmatrix}
+  A_{11}&A_{12}&\cdots&A_{1n}\\
+  A_{21}&A_{22}&\cdots&A_{2n}\\
+  \vdots&\vdots&\ddots&\vdots\\
+  A_{n1}&A_{n2}&\cdots&A_{nn}
+  \end{pmatrix}^{T}.
+\]
+
+\begin{explanation}
+Матрица в числителе называется присоединённой и обозначается
+$\operatorname{adj}A$. Разложение определителя по строке и столбцу даёт
+\[
+  A\,\operatorname{adj}A
+  =\operatorname{adj}A\,A
+  =(\det A)E.
+\]
+При $\det A\ne0$ деление на $\det A$ даёт формулу для $A^{-1}$.
+Обратно, если $A$ обратима, то
+$1=\det E=\det A\det A^{-1}$, поэтому $\det A\ne0$.
+\end{explanation}
+
+
+Дополнительные свойства:
+\begin{enumerate}[label=\arabic*)]
+  \item $\det(AT_i(\lambda))=\lambda\det A$;
+  \item $\det(AD_{ij}(\lambda))=\det A$;
+  \item $\det(AP_{ij})=-\det A$;
+  \item $\det A=\det A^T$;
+  \item определитель треугольной матрицы равен произведению её
+  диагональных элементов;
+  \item $\det\begin{pmatrix}A&*\\0&B\end{pmatrix}=\det A\det B$.
+\end{enumerate}
+
+\chapter{Модули над кольцом}
+
+Пусть $R$ --- ассоциативное кольцо, а $M$ --- абелева группа.
+
+\begin{definition}
+Правый $R$-модуль --- множество $M$ с отображением
+\[
+  M\times R\to M,\qquad (x,\lambda)\mapsto x\lambda,
+\]
+для которого
+\[
+\begin{aligned}
+  (x\lambda)\mu&=x(\lambda\mu),\\
+  x(\lambda+\mu)&=x\lambda+x\mu,\\
+  (x+y)\lambda&=x\lambda+y\lambda.
+\end{aligned}
+\]
+Левый модуль определяется аналогично отображением $R\times M\to M$.
+\end{definition}
+
+\begin{definition}
+Модуль над кольцом с единицей называется унитальным, если
+$x\cdot1=x$ (соответственно $1\cdot x=x$) для всех $x\in M$.
+\end{definition}
+
+Любое кольцо является модулем над самим собой. Если $I$ --- правый
+(левый) идеал кольца $R$, то $I$ --- правый (левый) $R$-модуль.
+
+\begin{definition}
+Противоположное кольцо $R^{\circ}$ имеет то же аддитивное строение, а
+умножение задаётся равенством $a\circ b=ba$. Правый $R^{\circ}$-модуль
+эквивалентен левому $R$-модулю.
+\end{definition}
+
+\begin{definition}
+Подмодуль $N\leq M$ --- аддитивная подгруппа, замкнутая относительно
+умножения на скаляры: $x\in N$, $a\in R\Rightarrow ax\in N$.
+\end{definition}
+
+\begin{editorialnote}
+Начиная с этой формулы используется соглашение о \emph{левых} модулях:
+скаляр записывается слева, $ax$. Для правого модуля условие следует
+писать как $xa\in N$; все последующие утверждения имеют симметричный
+правый вариант.
+\end{editorialnote}
+
+Фактормодуль $M/N$ состоит из смежных классов, причём
+\[
+  \bar m+\bar n=\overline{m+n},
+  \qquad a\bar m=\overline{am}.
+\]
+
+Гомоморфизм модулей $\varphi\colon M\to N$ сохраняет сложение и
+умножение на скаляры:
+\[
+  \varphi(x+y)=\varphi(x)+\varphi(y),
+  \qquad
+  \varphi(ax)=a\varphi(x).
+\]
+
+
+Дальнейшие определения формулируются для унитальных модулей над кольцом с
+единицей.
+
+\begin{definition}
+Элементы $x_1,\ldots,x_n$ порождают модуль $M$, если каждый $v\in M$
+представляется конечной линейной комбинацией
+\[
+  v=\lambda_1x_1+\lambda_2x_2+\cdots+\lambda_nx_n,
+  \qquad \lambda_i\in R.
+\]
+Элементы $x_i$ называются порождающими (образующими) модуля $M$.
+\end{definition}
+
+\begin{definition}
+Система порождающих называется базисом, если указанное представление
+единственно для каждого $v\in M$.
+\end{definition}
+
+\begin{definition}
+Свободный модуль --- модуль, обладающий базисом. Векторное пространство
+всегда является свободным модулем над полем.
+\end{definition}
+
+Рассмотрим два разложения одного элемента:
+\[
+  v=\lambda_1x_1+\cdots+\lambda_nx_n,
+  \qquad
+  v=\mu_1x_1+\cdots+\mu_nx_n.
+\]
+Тогда
+\[
+  0=(\lambda_1-\mu_1)x_1+\cdots+(\lambda_n-\mu_n)x_n.
+\]
+
+\begin{definition}
+Нетривиальная линейная комбинация --- комбинация, в которой не все
+коэффициенты равны нулю. Элементы $x_1,\ldots,x_n$ называются линейно
+зависимыми, если существует их нетривиальная линейная комбинация, равная
+нулю; в противном случае они линейно независимы.
+\end{definition}
+
+Базис модуля --- линейно независимая система порождающих.
+
+
+Термин ``система векторов'' используется как синоним ``множество
+векторов'', при этом векторы могут занумеровываться и могут повторяться.
+
+\begin{definition}[Критерий зависимости]
+Система векторов линейно зависима тогда и только тогда, когда один из её
+векторов линейно выражается через остальные.
+\end{definition}
+
+\begin{editorialnote}
+Для произвольного модуля над кольцом это утверждение требует уточнения:
+в разрешаемом коэффициенте должен встречаться обратимый элемент. Например,
+в $\Z/4\Z$ как $\Z$-модуле ненулевой элемент $\bar2$ зависим, поскольку
+$2\bar2=0$, но выразить $\bar2$ через пустую систему нельзя. Без
+оговорок критерий верен для векторных пространств над полем и ниже
+доказывается именно в этой форме.
+\end{editorialnote}
+
+\chapter{Векторные пространства}
+
+\begin{definition}
+Если $F$ --- поле, то $F$-векторное пространство --- унитальный
+$F$-модуль: множество $V$ с операциями сложения
+$V\times V\to V$ и умножения на скаляры
+$V\times F\to V$, удовлетворяющими аксиомам модуля.
+\end{definition}
+
+\begin{definition}
+Алгеброй над полем $F$ называется векторное пространство $A$ с
+дополнительной операцией умножения $A\times A\to A$, дистрибутивной по
+сложению и совместимой с умножением на скаляры:
+\[
+  \lambda(ab)=(\lambda a)b=a(\lambda b).
+\]
+\end{definition}
+
+Алгебра объединяет свойства векторного пространства и кольца. Подпространство
+$U\leq V$ замкнуто относительно сложения и умножения на скаляры.
+
+\begin{definition}
+Подалгебра $B$ алгебры $A$ является одновременно подкольцом алгебры $A$
+и подпространством её векторного пространства.
+\end{definition}
+
+
+\begin{theorem}[Критерий линейной зависимости]
+Система векторов $v_1,\ldots,v_n$ линейно зависима тогда и только тогда,
+когда хотя бы один вектор линейно выражается через остальные.
+\end{theorem}
+
+\begin{proof}
+Если
+\[
+  v_1\lambda_1+\cdots+v_n\lambda_n=0
+\]
+и некоторый $\lambda_i\ne0$, то в векторном пространстве можно умножить
+на $\lambda_i^{-1}$ и получить
+\[
+  v_i=-\sum_{j\ne i}v_j\lambda_j\lambda_i^{-1}.
+\]
+Обратно, перенеся выражение одного вектора через остальные в одну сторону,
+получаем нетривиальную линейную комбинацию, равную нулю.
+\end{proof}
+
+\begin{definition}
+Линейная оболочка векторов $a_1,\ldots,a_n\in V$ --- множество всех их
+линейных комбинаций:
+\[
+  \langle a_1,\ldots,a_n\rangle
+  =L(a_1,\ldots,a_n)
+  =\left\{\sum_{i=1}^{n}a_i\lambda_i\,\middle|\,\lambda_i\in F\right\}
+  \leq V.
+\]
+Если эта оболочка равна $V$, то векторы порождают $V$.
+\end{definition}
+
+
+\chapter{Системы линейных алгебраических уравнений}
+
+Пусть $a_1,\ldots,a_n,b\in F^k$. Векторы $a_i$ порождают некоторое
+подпространство. Вопрос о принадлежности $b$ этому подпространству
+эквивалентен представлению
+\[
+  b=a_1x_1+\cdots+a_nx_n.
+\]
+Покоординатно это система
+\[
+\begin{cases}
+a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_n=b_1,\\
+a_{21}x_1+a_{22}x_2+\cdots+a_{2n}x_n=b_2,\\
+\hfill\vdots\\
+a_{k1}x_1+a_{k2}x_2+\cdots+a_{kn}x_n=b_k.
+\end{cases}
+\]
+В матричном виде: $Ax=b$, где $A\in M_{k\times n}(F)$, а решение ---
+столбец $x\in F^n$.
+
+\begin{definition}
+Система называется совместной, если существует хотя бы одно решение;
+определённой, если решение единственно; несовместной, если решений нет.
+Эквивалентные системы имеют одинаковое множество решений.
+\end{definition}
+
+
+\begin{definition}
+Ведущий элемент строки --- её первый ненулевой элемент. Ступенчатая
+матрица --- матрица, у которой положения ведущих элементов строк образуют
+строго возрастающую последовательность, а все нулевые строки находятся в
+конце.
+\end{definition}
+
+\begin{theorem}
+Любую матрицу можно привести к ступенчатому виду элементарными
+преобразованиями строк.
+\end{theorem}
+
+\begin{proof}
+Алгоритм:
+\begin{enumerate}[label=\Roman*.]
+  \item Если матрица нулевая, она уже ступенчатая.
+  \item Иначе найти первый ненулевой столбец.
+  \item Переставить строки так, чтобы ненулевой элемент этого столбца
+  оказался в первой строке, затем вычесть подходящие кратные первой строки
+  из последующих, зануляя остальные элементы столбца.
+  \item Повторить процедуру для оставшейся подматрицы.
+\end{enumerate}
+После каждого шага либо уменьшается число рассматриваемых строк, либо
+число рассматриваемых столбцов. Поэтому процесс конечен и заканчивается
+ступенчатой матрицей.
+\end{proof}
+
+Это метод Гаусса. Он заключается в приведении расширенной матрицы системы
+$[A\mid b]$ к ступенчатому виду. Пусть $r$ --- число ненулевых строк в
+$A$, $\widetilde r$ --- число ненулевых строк в $[A\mid b]$, а $n$ ---
+число неизвестных.
+
+
+Возможны три случая.
+\begin{enumerate}[label=\arabic*)]
+  \item $r<\widetilde r$: система несовместна, поскольку появляется
+  строка $0x_1+\cdots+0x_n=c$ с $c\ne0$.
+  \item $r=\widetilde r=n$: система определённа. Обратной подстановкой
+  последовательно находятся $x_n,x_{n-1},\ldots,x_1$.
+  \item $r=\widetilde r<n$: система совместна и имеет свободные
+  переменные. Ведущие переменные выражаются через свободные, а свободным
+  придаются произвольные значения из поля.
+\end{enumerate}
+
+Вывод: свободные переменные параметризуют все решения; если поле имеет
+более одного элемента, наличие свободной переменной даёт более одного
+решения. Метод Гаусса не только определяет совместность и число решений,
+но и позволяет найти их.
+
+Прямой ход Гаусса --- приведение к ступенчатому виду. Обратный ход ---
+последовательное нахождение ведущих неизвестных во втором случае.
+
+
+\begin{example}
+Система
+\[
+  \begin{cases}x-y=0,\\x+y=2\end{cases}
+\]
+имеет единственное решение $(1,1)$, поскольку
+\[
+  \left(\begin{array}{cc|c}1&-1&0\\1&1&2\end{array}\right)
+  \sim
+  \left(\begin{array}{cc|c}1&-1&0\\0&2&2\end{array}\right).
+\]
+\end{example}
+
+\begin{example}
+Система
+\[
+  \begin{cases}x-y=1,\\2x-2y=2\end{cases}
+\]
+имеет бесконечно много решений: $x=1+y$, $y\in F$. Геометрически обе
+прямые совпадают.
+\end{example}
+
+\begin{example}
+Система
+\[
+  \begin{cases}x-y=1,\\2x-2y=4\end{cases}
+\]
+несовместна: после исключения получается $0=2$. Геометрически прямые
+параллельны.
+\end{example}
+
+\begin{definition}
+Система $Ax=0$ называется однородной, а $Ax=b$ при $b\ne0$ ---
+неоднородной.
+\end{definition}
+
+Однородная система всегда совместна и всегда имеет нулевое решение.
+Если однородная система с числом уравнений, меньшим числа неизвестных,
+приведена к ступенчатому виду, то она имеет ненулевое решение.
+
+
+Совокупность всех решений однородной системы $Ax=0$ с $n$ неизвестными
+является подпространством в $F^n$: если $Ax=Ay=0$, то
+\[
+  A(\lambda x+\mu y)=\lambda Ax+\mu Ay=0.
+\]
+
+\begin{theorem}[О геометрической структуре решений]
+Если неоднородная система $Ax=b$ совместна и $x_{\mathrm{ч}}$ --- одно
+частное решение, а $X_0=\{x\mid Ax=0\}$ --- пространство решений
+однородной системы, то множество всех решений равно
+\[
+  X=X_0+x_{\mathrm{ч}}.
+\]
+\end{theorem}
+
+\begin{proof}
+Для $x_0\in X_0$ имеем $A(x_{\mathrm{ч}}+x_0)=b$. Если $x$ и
+$x_{\mathrm{ч}}$ --- два решения неоднородной системы, то
+$A(x-x_{\mathrm{ч}})=0$, следовательно, $x-x_{\mathrm{ч}}\in X_0$.
+\end{proof}
+
+\begin{definition}
+Линейное многообразие --- подмножество пространства, полученное сдвигом
+подпространства на фиксированный вектор.
+\end{definition}
+
+
+\chapter{Базис и размерность векторных пространств}
+
+\begin{theorem}[Основная лемма линейной зависимости]
+Если векторы $b_1,\ldots,b_m$ выражаются через
+$a_1,\ldots,a_n$ и $m>n$, то система $b_1,\ldots,b_m$ линейно зависима.
+\end{theorem}
+
+\begin{proof}
+Запишем
+\[
+  b_j=\sum_{i=1}^{n}a_i c_{ij},\qquad j=1,\ldots,m,
+\]
+и составим матрицу коэффициентов $C=(c_{ij})\in M_{n\times m}(F)$.
+Однородная система $C\lambda=0$ имеет $m>n$ неизвестных, поэтому после
+приведения к ступенчатому виду остаётся хотя бы одна свободная переменная.
+Следовательно, существует ненулевой столбец $\lambda$ такой, что
+\[
+  \sum_{j=1}^{m}\lambda_jb_j
+  =\sum_{i=1}^{n}a_i\left(\sum_{j=1}^{m}c_{ij}\lambda_j\right)=0.
+\]
+Это нетривиальная линейная зависимость между $b_1,\ldots,b_m$.
+\end{proof}
+
+\begin{definition}
+Конечномерное пространство --- пространство, порождённое конечным числом
+векторов.
+\end{definition}
+
+\begin{definition}
+Базис конечномерного пространства $V$ --- линейно независимая система
+векторов, порождающая $V$.
+\end{definition}
+
+\begin{theorem}[Существование базиса]
+В любом конечномерном пространстве существует базис.
+\end{theorem}
+
+\begin{proof}
+Если система порождающих линейно зависима, один из векторов выражается
+через остальные и может быть удалён без изменения линейной оболочки.
+Повторяя процесс, получаем базис.
+\end{proof}
+
+\begin{theorem}[О числе векторов в базисе]
+Все базисы конечномерного векторного пространства содержат одинаковое
+число векторов.
+\end{theorem}
+
+
+\begin{proof}
+Пусть $e_1,\ldots,e_n$ и $\widetilde e_1,\ldots,\widetilde e_m$ --- два
+базиса. Каждый вектор первого базиса выражается через второй, поэтому
+$n\leq m$. Меняя базисы местами, получаем $m\leq n$, следовательно,
+$m=n$.
+\end{proof}
+
+\begin{definition}
+Размерность конечномерного пространства $V$ --- число векторов в любом
+его базисе; обозначение $\dim V$.
+\end{definition}
+
+\begin{theorem}[Дополнение до базиса]
+Любую линейно независимую систему в конечномерном пространстве можно
+дополнить до базиса этого пространства.
+\end{theorem}
+
+\begin{proof}
+Пусть $v_1,\ldots,v_k$ линейно независимы. Если они уже порождают $V$,
+то это базис. Иначе выберем
+$v_{k+1}\notin\langle v_1,\ldots,v_k\rangle$; новая система остаётся
+линейно независимой. Продолжаем этот процесс. Он завершится не позднее
+чем после $\dim V-k$ шагов, поскольку линейно независимая система не
+может содержать больше $\dim V$ векторов.
+\end{proof}
+
+\begin{theorem}[Монотонность размерности]
+Если $U\subseteq V$ --- подпространство конечномерного пространства, то
+\[
+  \dim U\leq\dim V.
+\]
+\end{theorem}
+
+\begin{proof}
+Базис $U$ является линейно независимой системой в $V$ и потому
+дополняется до базиса $V$. Следовательно, число его элементов не
+превосходит $\dim V$.
+\end{proof}
+
+\begin{theorem}
+Если $V$ и $U$ --- конечномерные пространства над $F$, причём
+$\dim V=\dim U=n$, то
+\[
+  V\cong F^n,
+  \qquad
+  V\cong U.
+\]
+\end{theorem}
+
+\begin{proof}
+Выберем базис $e_1,\ldots,e_n$ пространства $V$. Координатное
+отображение
+\[
+  x_1e_1+\cdots+x_ne_n\longmapsto(x_1,\ldots,x_n)
+\]
+является изоморфизмом $V\cong F^n$. Аналогично $U\cong F^n$, поэтому
+$V\cong U$.
+\end{proof}
+
+
+\chapter{Ранг матрицы}
+
+Для матрицы $A$ равносильны следующие определения ранга:
+\begin{enumerate}[label=\arabic*)]
+  \item ранг системы её строк, то есть размерность линейной оболочки
+  строк;
+  \item строчный ранг --- размерность линейной оболочки строк матрицы
+  $A\in M_{k\times n}(F)$;
+  \item столбцовый ранг --- размерность линейной оболочки столбцов;
+  \item минорный ранг --- наибольший порядок ненулевого минора матрицы.
+\end{enumerate}
+
+Строки и столбцы, соответствующие базисному минору, линейно независимы и
+называются базисными. Остальные строки (столбцы) выражаются через базисные
+линейными комбинациями.
+
+
+\begin{theorem}
+Строчный, столбцовый и минорный ранги матрицы совпадают:
+\[
+  \operatorname{rowrank}A
+  =\operatorname{colrank}A
+  =\rk A.
+\]
+\end{theorem}
+
+\begin{proof}
+Элементарными преобразованиями строк и столбцов матрицу можно привести
+к нормальной форме
+\[
+  PAQ=
+  \begin{pmatrix}
+    E_r&0\\0&0
+  \end{pmatrix},
+\]
+где $P$ и $Q$ обратимы. Обратимые преобразования не изменяют размерности
+оболочек строк и столбцов и не меняют наибольший порядок ненулевого
+минора. В нормальной форме все три числа равны $r$, следовательно, они
+равны и для исходной матрицы.
+\end{proof}
+
+Для $A\in M_n(F)$ условие $\rk A=n$ равносильно $\det A\ne0$.
+
+\begin{theorem}
+Ранг матрицы не изменяется при элементарных преобразованиях строк.
+\end{theorem}
+
+\begin{proof}
+Каждое элементарное преобразование строк равносильно умножению слева на
+обратимую элементарную матрицу $E$. Поэтому
+\[
+  \Im(EA)=E(\Im A),
+\]
+а обратимое линейное отображение $E$ сохраняет размерность образа.
+\end{proof}
+
+\begin{theorem}[Кронекера--Капелли]
+Система $Ax=b$ совместна тогда и только тогда, когда
+\[
+  \rk A=\rk[A\mid b].
+\]
+\end{theorem}
+
+\begin{proof}
+Система совместна тогда и только тогда, когда $b$ является линейной
+комбинацией столбцов $A$. Это равносильно тому, что добавление столбца
+$b$ не увеличивает размерность их линейной оболочки, то есть
+$\rk A=\rk[A\mid b]$.
+\end{proof}
+
+\begin{theorem}
+Пространство решений однородной системы $Ax=0$ с $n$ неизвестными имеет
+размерность
+\[
+  n-\rk A.
+\]
+\end{theorem}
+
+\begin{proof}
+После приведения $A$ к ступенчатому виду число ведущих переменных равно
+$\rk A$, а число свободных --- $n-\rk A$. Каждому набору значений
+свободных переменных соответствует единственное решение, поэтому
+пространство решений изоморфно $F^{\,n-\rk A}$.
+\end{proof}
+
+
+\chapter{Гомоморфизмы векторных пространств}
+
+Пусть $U,V$ --- векторные пространства над полем $F$.
+
+\begin{definition}
+Гомоморфизм (линейное отображение) $\varphi\colon U\to V$ удовлетворяет
+\[
+  \varphi(\alpha a+\beta b)
+  =\alpha\varphi(a)+\beta\varphi(b)
+\]
+для всех $a,b\in U$ и $\alpha,\beta\in F$. В частности,
+\[
+  \varphi(0)=0,
+  \quad \varphi(-a)=-\varphi(a),
+  \quad \varphi(a-b)=\varphi(a)-\varphi(b).
+\]
+\end{definition}
+
+Множество всех линейных отображений обозначается
+$\operatorname{Hom}(U,V)$, а
+$\operatorname{Hom}(U,U)=\operatorname{End}(U)$.
+
+
+Пусть $\dim U=m$, $\dim V=n$, $(e_1,\ldots,e_m)$ --- базис $U$, а
+$(f_1,\ldots,f_n)$ --- базис $V$. Для любого $x\in U$ его координаты в
+первом базисе определяют разложение, а значения отображения на базисных
+векторах имеют вид
+\[
+  \varphi(e_j)=\sum_{i=1}^{n}a_{ij}f_i.
+\]
+Коэффициенты $a_{ij}$ составляют матрицу линейного отображения
+$A\in M_{n\times m}(F)$; её столбцы --- координаты образов базисных
+векторов. Если $X$ и $Y$ --- столбцы координат $x$ и $\varphi(x)$, то
+\[
+  Y=AX.
+\]
+Таким образом, уравнение $Ax=b$ спрашивает, является ли $b$ образом
+некоторого вектора при гомоморфизме с матрицей $A$.
+
+\begin{definition}
+Образ и ядро линейного отображения $A\colon U\to V$:
+\[
+  \Im A=\{y\in V\mid \exists x\in U:\ A(x)=y\}\leq V,
+\]
+\[
+  \Ker A=\{x\in U\mid A(x)=0\}\leq U.
+\]
+Ранг отображения --- $\dim\Im A$.
+\end{definition}
+
+\begin{theorem}[О ранге и дефекте]
+Для $A\colon U\to V$ при $\dim U=n$
+\[
+  \dim\Im A+\dim\Ker A=\dim U=n.
+\]
+\end{theorem}
+
+\begin{proof}
+Выберем базис $e_1,\ldots,e_k$ ядра $\Ker A$ и дополним его до базиса
+$U$:
+\[
+  e_1,\ldots,e_k,e_{k+1},\ldots,e_n.
+\]
+Тогда векторы $Ae_{k+1},\ldots,Ae_n$ образуют базис $\Im A$.
+Они порождают образ, поскольку первые $k$ базисных векторов переходят в
+нуль; их линейная независимость следует из того, что линейная комбинация
+$e_{k+1},\ldots,e_n$, попавшая в ядро, должна лежать одновременно в
+оболочке этих векторов и в оболочке $e_1,\ldots,e_k$. Следовательно,
+\[
+  \dim\Ker A=k,\qquad \dim\Im A=n-k.
+\]
+\end{proof}
+
+
+Для матрицы отображения
+\[
+  \dim\Im A=\rk A,
+\]
+поскольку образ порождается столбцами матрицы. Поэтому предыдущая теорема
+даёт
+\[
+  \dim\Im A+\dim\Ker A=\dim U.
+\]
+
+На $\operatorname{Hom}(U,V)$ вводятся операции
+\[
+  (A+B)(x)=A(x)+B(x),
+  \qquad
+  (\lambda A)(x)=\lambda A(x).
+\]
+Они превращают $\operatorname{Hom}(U,V)$ в векторное пространство
+размерности
+\[
+  \dim U\cdot\dim V,
+\]
+а выбор базисов отождествляет линейные отображения с матрицами:
+$A,B\leftrightarrow A+B$ и $\lambda A\leftrightarrow\lambda A$.
+
+Композиции отображений соответствует произведение матриц. Если
+$V\xrightarrow{B}U\xrightarrow{A}W$, то
+\[
+  [A\circ B]=[A][B].
+\]
+
+\begin{proposition}
+Если $\dim U=\dim V<\infty$, то для линейного отображения
+$\varphi\colon U\to V$ равносильны условия:
+\begin{enumerate}[label=\arabic*)]
+  \item $\varphi$ --- изоморфизм;
+  \item $\Ker\varphi=\{0\}$;
+  \item $\Im\varphi=V$,
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Условие $\Ker\varphi=\{0\}$ по теореме о ранге и дефекте даёт
+$\dim\Im\varphi=\dim U=\dim V$, поэтому $\Im\varphi=V$. Обратно,
+сюръективность даёт $\dim\Im\varphi=\dim V=\dim U$, откуда
+$\dim\Ker\varphi=0$. Линейное отображение является изоморфизмом тогда и
+только тогда, когда оно одновременно инъективно и сюръективно.
+\end{proof}
+
+\begin{explanation}
+При разных размерностях инъективность и сюръективность уже не
+равносильны и рассматриваются отдельно.
+\end{explanation}
+
+\begin{visualreconstruction}
+Коэффициенты матрицы композиции удобно получить одной цепочкой. При
+базисах $e_i$, $f_j$, $g_\ell$:
+\[
+  B(e_i)=\sum_{j=1}^{m}b_{ji}f_j,
+  \qquad
+  A(f_j)=\sum_{\ell=1}^{n}a_{\ell j}g_\ell,
+\]
+\[
+  (A\circ B)(e_i)
+  =\sum_{j=1}^{m}\sum_{\ell=1}^{n}a_{\ell j}b_{ji}g_\ell
+  =\sum_{\ell=1}^{n}
+    \underbrace{\left(\sum_{j=1}^{m}a_{\ell j}b_{ji}\right)}_{c_{\ell i}}
+    g_\ell .
+\]
+Следовательно, $c_{\ell i}=\sum_j a_{\ell j}b_{ji}$, то есть
+$C=AB$.
+\end{visualreconstruction}
+
+
+\chapter[Факторпространства и операции над подпространствами]
+{Факторпространства и операции над\\ подпространствами}
+
+\begin{definition}
+Пусть $U\leq V$. Векторы $v,\tilde v\in V$ называются эквивалентными
+по модулю $U$, если
+\[
+  v-\tilde v\in U.
+\]
+Класс $v+U=\{\tilde v\in V\mid \tilde v-v\in U\}$; множество классов
+$V/U$ с операциями
+\[
+  (v_1+U)+(v_2+U)=(v_1+v_2)+U,
+  \qquad
+  \lambda(v+U)=\lambda v+U
+\]
+называется факторпространством.
+\end{definition}
+
+Если $V$ конечномерно, то
+\[
+  \dim(V/U)=\dim V-\dim U
+\]
+--- коразмерность подпространства $U$.
+
+\begin{definition}
+Согласованный базис $V$ с подпространством $U$ --- базис, в котором
+некоторая часть векторов образует базис $U$.
+\end{definition}
+
+Нулём в факторпространстве $V/U$ является само подпространство $U$.
+
+\begin{theorem}[Первая теорема об изоморфизме]
+Для линейного отображения $A\colon U\to V$
+\[
+  U/\Ker A\cong\Im A.
+\]
+\end{theorem}
+
+\begin{proof}
+Определим
+\[
+  \overline A\colon U/\Ker A\to\Im A,\qquad
+  x+\Ker A\longmapsto Ax.
+\]
+Если $x-y\in\Ker A$, то $Ax=Ay$, поэтому отображение определено
+корректно. Оно линейно и сюръективно по определению образа. Если
+$\overline A(x+\Ker A)=0$, то $x\in\Ker A$, то есть
+$x+\Ker A=\Ker A$; следовательно, ядро $\overline A$ нулевое и
+$\overline A$ --- изоморфизм.
+\end{proof}
+
+\begin{visualreconstruction}
+Пространство $U$ разбито на классы $x+\Ker A$; пространство $V$ справа
+содержит вертикально отмеченный образ $\Im A$. Все точки одного класса
+переходят в одну точку образа:
+\begin{center}
+\begin{tikzpicture}[>=Latex,scale=.92]
+  \draw (0,0) rectangle (4,3.1);
+  \node[above] at (2,3.1) {$U$};
+  \draw (0.35,.55) rectangle (3.65,1.05);
+  \draw (0.35,1.32) rectangle (3.65,1.82);
+  \draw (0.35,2.09) rectangle (3.65,2.59);
+  \node at (1.25,.80) {$x_3+\Ker A$};
+  \node at (1.25,1.57) {$x_2+\Ker A$};
+  \node at (1.25,2.34) {$x_1+\Ker A$};
+  \draw (6,0) rectangle (8.35,3.1);
+  \node[above] at (7.18,3.1) {$V$};
+  \draw[very thick] (7.18,.35) -- (7.18,2.75);
+  \node[right] at (7.18,2.72) {$\Im A$};
+  \fill (7.18,.80) circle (1.6pt);
+  \fill (7.18,1.57) circle (1.6pt);
+  \fill (7.18,2.34) circle (1.6pt);
+  \draw[->] (3.65,.80) -- (7.1,.80);
+  \draw[->] (3.65,1.57) -- (7.1,1.57);
+  \draw[->] (3.65,2.34) -- (7.1,2.34);
+  \node[above] at (5.25,2.72) {$A$};
+\end{tikzpicture}
+\end{center}
+Индуцированное отображение классов в $\Im A$ биективно и линейно.
+\end{visualreconstruction}
+
+
+Из предыдущей теоремы вновь получаем
+\[
+  \dim U-\dim\Ker A=\dim\Im A.
+\]
+
+Для подпространств $U,V\leq W$ определяются:
+\begin{enumerate}[label=\arabic*)]
+  \item пересечение $U\cap V$;
+  \item объединение множеств $U\cup V$; оно обычно не является
+  подпространством;
+  \item сумма подпространств
+  \[
+    U+V=\{x+y\mid x\in U,\ y\in V\}=\langle U\cup V\rangle\leq W.
+  \]
+\end{enumerate}
+
+\begin{theorem}
+\[
+  (U+V)/U\cong V/(U\cap V).
+\]
+\end{theorem}
+
+\begin{proof}
+Рассмотрим линейное отображение
+\[
+  \varphi\colon V\to(U+V)/U,\qquad v\mapsto v+U.
+\]
+Оно сюръективно: класс $(u+v)+U$ совпадает с $v+U$. Его ядро состоит из
+векторов $v\in V$, лежащих в $U$, то есть равно $U\cap V$. По первой
+теореме об изоморфизме
+$V/(U\cap V)\cong(U+V)/U$.
+\end{proof}
+
+\begin{theorem}[Формула Грассмана]
+\[
+  \dim(U+V)+\dim(U\cap V)=\dim U+\dim V.
+\]
+\end{theorem}
+
+\begin{proof}
+Из предыдущего изоморфизма и формулы размерности факторпространства
+получаем
+\[
+  \dim(U+V)-\dim U=\dim V-\dim(U\cap V).
+\]
+Перенос слагаемых даёт требуемое равенство.
+\end{proof}
+
+Следствия:
+\[
+  \dim(U+V)\leq\dim U+\dim V,
+\]
+\[
+  \rk(A+B)\leq\rk A+\rk B,
+\]
+\[
+  \rk(AB)\leq\min\{\rk A,\rk B\},
+\]
+поскольку
+\[
+  \Im(A+B)\subseteq\Im A+\Im B,\qquad
+  \Im(AB)\subseteq\Im A.
+\]
+Кроме того, $AB$ является образом ограничения $A|_{\Im B}$, поэтому
+$\rk(AB)\leq\rk B$. Вместе эти включения дают оценку через минимум.
+
+
+\begin{definition}
+Подпространства $U_1,\ldots,U_k$ называются линейно независимыми, если из
+\[
+  v_1+\cdots+v_k=0,
+  \qquad v_i\in U_i,
+\]
+следует $v_1=\cdots=v_k=0$.
+\end{definition}
+
+При выборе базиса каждого $U_i$ их объединение линейно независимо тогда
+и только тогда, когда подпространства $U_i$ линейно независимы. В этом
+случае
+\[
+  \dim(U_1+\cdots+U_k)=\dim U_1+\cdots+\dim U_k.
+\]
+
+Для двух подпространств $U,W\leq V$ линейная независимость равносильна
+$U\cap W=\{0\}$.
+
+\begin{definition}
+Пространство $V$ раскладывается во внутреннюю прямую сумму подпространств
+$U_1,\ldots,U_k$, если
+\begin{enumerate}[label=\arabic*)]
+  \item $V=U_1+\cdots+U_k$;
+  \item подпространства $U_1,\ldots,U_k$ линейно независимы.
+\end{enumerate}
+Обозначение:
+\[
+  V=U_1\oplus\cdots\oplus U_k.
+\]
+\end{definition}
+
+
+\begin{definition}
+Внешняя прямая сумма пространств $U_1,\ldots,U_k$ --- пространство
+\[
+  \bigoplus_{i=1}^{k}U_i
+  =\{(v_1,\ldots,v_k)\mid v_i\in U_i\}
+\]
+с покомпонентными операциями.
+\end{definition}
+
+Внутренняя прямая сумма изоморфна внешней: элемент
+$v_1+\cdots+v_k$ однозначно соответствует кортежу
+$(v_1,\ldots,v_k)$.
+
+\begin{proof}
+Отображение
+\[
+  \Phi\colon\bigoplus_{i=1}^{k}U_i\to V,\qquad
+  (v_1,\ldots,v_k)\mapsto v_1+\cdots+v_k
+\]
+линейно. Оно сюръективно, поскольку $V=U_1+\cdots+U_k$, и инъективно
+в силу линейной независимости подпространств: равенство суммы нулю
+влечёт $v_1=\cdots=v_k=0$. Следовательно, $\Phi$ --- изоморфизм.
+\end{proof}
+
+\chapter{Линейные функционалы}
+
+Множество $\operatorname{Hom}(U,F)$ линейных отображений из $U$ в поле
+$F$ называется сопряжённым (двойственным) пространством к $U$ и
+обозначается $U^*$. Так как $F$ одномерно,
+\[
+  \dim U^*=\dim U.
+\]
+Линейный функционал $\omega\in U^*$ при выборе базиса
+$e_1,\ldots,e_n$ записывается строкой:
+\[
+  x=e_1x_1+\cdots+e_nx_n,
+  \qquad
+  \omega(x)=\omega(e_1)x_1+\cdots+\omega(e_n)x_n.
+\]
+Два функционала равны тогда и только тогда, когда они совпадают на всех
+векторах (достаточно проверить их значения на базисе).
+
+
+Если $\omega=a_1x_1+\cdots+a_nx_n$, то коэффициенты $a_i$ задают
+функционал в выбранном базисе; это однородный многочлен первой степени.
+Линейная строка --- способ записи линейного функционала в фиксированном
+базисе над полем.
+
+\begin{definition}
+Для базиса $e_1,\ldots,e_n$ координатные функционалы
+$e_1^*,\ldots,e_n^*\in U^*$ определяются равенствами
+\[
+  e_i^*(x)=x_i
+\]
+для $x=e_1x_1+\cdots+e_nx_n$.
+\end{definition}
+
+\begin{theorem}
+Координатные функционалы $e_1^*,\ldots,e_n^*$ образуют базис $U^*$.
+\end{theorem}
+
+\begin{proof}
+Если $\lambda_1e_1^*+\cdots+\lambda_ne_n^*=0$, то применение к $e_i$
+даёт $\lambda_i=0$, поскольку
+\[
+  e_j^*(e_i)=\delta_{ij}.
+\]
+Размерности совпадают, следовательно, линейно независимая система из $n$
+элементов является базисом.
+\end{proof}
+
+\begin{definition}
+$e_1^*,\ldots,e_n^*$ --- сопряжённый (двойственный) базис к
+$e_1,\ldots,e_n$. Равенство $e_i^*(e_j)=\delta_{ij}$ использует символ
+Кронекера.
+\end{definition}
+
+Симметрические матрицы образуют подпространство
+$\{A\in M_n(F)\mid A=A^T\}$, кососимметрические ---
+$\{A\in M_n(F)\mid A=-A^T\}$.
+
+
+При $\dim U=n<\infty$ второе сопряжённое пространство $U^{**}$ также
+имеет размерность $n$. Существует канонический изоморфизм
+\[
+  \iota\colon U\to U^{**},
+  \qquad
+  v\mapsto f_v,
+  \qquad
+  f_v(\omega)=\omega(v).
+\]
+Он не зависит от выбора базиса: линейность следует из
+\[
+  f_{v+w}=f_v+f_w,
+  \qquad f_{\lambda v}=\lambda f_v,
+\]
+а в конечномерном случае размерности совпадают.
+
+\begin{proof}
+Если $v\ne0$, дополним его до базиса $U$ и возьмём координатный
+функционал $\omega$, равный $1$ на $v$ и $0$ на остальных базисных
+векторах. Тогда $f_v(\omega)=\omega(v)\ne0$, поэтому $\iota$ инъективно.
+В конечномерном случае
+$\dim U=\dim U^{**}$, следовательно, инъективное отображение $\iota$
+сюръективно и является изоморфизмом.
+\end{proof}
+
+\begin{definition}
+Для подпространства $U\leq V$ аннулятором называется
+\[
+  U^0=\{\omega\in V^*\mid \omega(u)=0\text{ для всех }u\in U\}
+  \leq V^*.
+\]
+\end{definition}
+
+Если $\dim V=n$ и $\dim U=k$, то
+\[
+  \dim U^0=n-k=\operatorname{codim}U,
+\]
+и $U^0\cong(V/U)^*$.
+
+\begin{proof}
+Выберем базис $e_1,\ldots,e_k$ пространства $U$ и дополним его до
+базиса $e_1,\ldots,e_n$ пространства $V$. Тогда
+$e^{k+1},\ldots,e^n$ образуют базис $U^0$, откуда
+$\dim U^0=n-k$. Отображение
+\[
+  (V/U)^*\to U^0,\qquad
+  \lambda\mapsto\lambda\circ\pi,
+\]
+где $\pi\colon V\to V/U$ --- каноническая проекция, является
+изоморфизмом.
+\end{proof}
+
+
+Из формулы размерности следует
+\[
+  \dim (U^0)^0=\dim U,
+\]
+а поскольку $U\subseteq(U^0)^0$, в конечномерном случае
+\[
+  (U^0)^0=U.
+\]
+
+\begin{theorem}[Критерий базиса в $V^*$]
+Функционалы $\omega_1,\ldots,\omega_n$ образуют базис $V^*$ тогда и
+только тогда, когда
+\[
+  \bigcap_{i=1}^{n}\Ker\omega_i=\{0\}.
+\]
+Эквивалентно, их линейная оболочка имеет нулевой аннулятор.
+\end{theorem}
+
+\begin{proof}
+Рассмотрим отображение
+\[
+  \Phi\colon V\to F^n,\qquad
+  v\mapsto(\omega_1(v),\ldots,\omega_n(v)).
+\]
+Его ядро равно $\bigcap_i\Ker\omega_i$. Если это пересечение нулевое,
+то $\Phi$ инъективно. Так как $\dim V=\dim F^n=n$, отображение
+изоморфно, а его координатные функционалы $\omega_i$ образуют базис
+$V^*$. Обратно, если $\omega_i$ образуют базис и все они обращаются в
+нуль на $v$, то на $v$ обращается в нуль любой функционал. Координатный
+функционал относительно базиса, содержащего ненулевой $v$, показывает,
+что это возможно только при $v=0$.
+\end{proof}
+
+\section{Сопряжённый гомоморфизм}
+
+Пусть $A\colon U\to V$. Сопряжённое отображение
+\[
+  A^*\colon V^*\to U^*,
+  \qquad
+  A^*(\omega)=\omega\circ A
+\]
+задаётся равенством
+\[
+  (A^*\omega)(v)=\omega(Av).
+\]
+Оно обладает свойствами
+\[
+  (A+B)^*=A^*+B^*,
+  \qquad (\lambda A)^*=\lambda A^*,
+  \qquad (AB)^*=B^*A^*.
+\]
+Матрица сопряжённого отображения в сопряжённых базисах является
+транспонированной матрицей исходного отображения.
+
+\begin{visualreconstruction}
+Определение удобно представить цепочкой стрелок
+$A\colon U\to V$, $A^*\colon V^*\to U^*$ и соответствием
+$\omega\mapsto\omega\circ A$:
+\[
+  (A^*(\omega))(v)=(A^*\omega,v)=(\omega,Av)
+  =\omega(A(v)),
+  \qquad v\in U,\ \omega\in V^*.
+\]
+\end{visualreconstruction}
+
+
+Имеют место соотношения
+\[
+  \Ker A^*=(\Im A)^0,
+  \qquad
+  \Im A^*=(\Ker A)^0.
+\]
+
+\begin{proof}
+Функционал $\omega\in V^*$ лежит в $\Ker A^*$ тогда и только тогда,
+когда $\omega(Au)=0$ для всех $u\in U$, то есть когда он обращается в
+нуль на $\Im A$. Поэтому $\Ker A^*=(\Im A)^0$.
+
+Для второго равенства включение
+$\Im A^*\subseteq(\Ker A)^0$ следует из
+$(A^*\omega)(u)=\omega(Au)=0$ при $u\in\Ker A$. Размерности этих
+пространств совпадают:
+\[
+  \dim\Im A^*=\rk A^*=\rk A
+  =\dim U-\dim\Ker A=\dim(\Ker A)^0.
+\]
+Следовательно, включение является равенством.
+\end{proof}
+В частности,
+\[
+  \dim\Im A
+  =\dim U-\dim\Ker A
+  =\dim(\Ker A)^0
+  =\dim\Im A^*,
+\]
+что ещё раз доказывает равенство строчного и столбцового рангов матрицы.
+
+
+\chapter{Тензоры}
+
+Пусть $V$ --- конечномерное векторное пространство, а $V^*$ ---
+сопряжённое.
+
+\begin{definition}
+Тензор типа $(p,q)$ --- полилинейное отображение
+\[
+  T\colon V^p\times(V^*)^q\to F.
+\]
+Число $p+q$ называется полной валентностью (рангом) тензора; $p$ ---
+ковариантная, $q$ --- контравариантная валентность.
+Множество таких тензоров обозначается $T_p^q(V)$.
+\end{definition}
+
+\begin{explanation}
+Небольшая схема $v=2e_1$, $e_1=\tfrac12v$ иллюстрирует главный мотив
+раздела: при замене базиса меняются координаты аргументов и компонент,
+но сам тензор как полилинейное отображение остаётся тем же.
+\end{explanation}
+
+Частные случаи:
+\begin{enumerate}[label=\arabic*)]
+  \item тензоры типа $(0,0)$ --- скаляры $F$;
+  \item типа $(1,0)$ --- ковекторы $V^*$;
+  \item типа $(0,1)$ --- векторы $(V^*)^*\cong V$;
+  \item типа $(2,0)$ --- билинейные функции на $V$;
+  \item типа $(1,1)$ --- линейные операторы $V\to V$;
+  \item типа $(n,0)$ --- в частности, определитель квадратной матрицы.
+\end{enumerate}
+
+Для $T,S\in T_p^q(V)$ определяются сумма и умножение на скаляр
+поточечно. Тензорное произведение
+$T\otimes S\in T_{p+k}^{q+\ell}(V)$ для
+$S\in T_k^{\ell}(V)$ задаётся формулой
+\[
+\begin{aligned}
+&(T\otimes S)(v_1,\ldots,v_{p+k},
+\omega_1,\ldots,\omega_{q+\ell})\\
+&\qquad=T(v_1,\ldots,v_p,\omega_1,\ldots,\omega_q)
+S(v_{p+1},\ldots,v_{p+k},
+\omega_{q+1},\ldots,\omega_{q+\ell}).
+\end{aligned}
+\]
+
+
+Тензорное произведение ассоциативно, вообще говоря некоммутативно,
+дистрибутивно относительно сложения и согласовано с умножением на скаляры:
+\[
+  T\otimes(S\otimes R)=(T\otimes S)\otimes R,
+\]
+\[
+  T\otimes(S+R)=T\otimes S+T\otimes R,
+\]
+\[
+  \lambda(T\otimes S)=(\lambda T)\otimes S=T\otimes(\lambda S).
+\]
+
+\begin{theorem}[Тензорный базис]
+Если $e_1,\ldots,e_n$ --- базис $V$, а $e^1,\ldots,e^n$ --- сопряжённый
+базис $V^*$, то тензоры
+\[
+  e^{i_1}\otimes\cdots\otimes e^{i_p}
+  \otimes e_{j_1}\otimes\cdots\otimes e_{j_q}
+\]
+образуют базис $T_p^q(V)$.
+\end{theorem}
+
+\begin{proof}
+Полилинейность показывает, что тензор однозначно определяется значениями
+на наборах базисных векторов и ковекторов. Поэтому любой тензор
+раскладывается по указанной системе с коэффициентами
+\[
+  T_{i_1\ldots i_p}^{j_1\ldots j_q}
+  =T(e_{i_1},\ldots,e_{i_p},
+      e^{j_1},\ldots,e^{j_q}).
+\]
+Линейная независимость проверяется подстановкой тех же базисных
+аргументов: равенство $e^i(e_j)=\delta^i_j$ выделяет ровно один
+коэффициент линейной комбинации. Следовательно, система одновременно
+порождает пространство и линейно независима.
+\end{proof}
+
+Отсюда
+\[
+  \dim T_p^q(V)=n^{p+q}.
+\]
+
+\begin{example}
+Пусть $\dim V=2$. При
+базисах $e_1,e_2$ и $e^1,e^2$ четыре тензора
+\[
+  e^1\otimes e_1,\quad e^1\otimes e_2,\quad
+  e^2\otimes e_1,\quad e^2\otimes e_2
+\]
+подставляются в предполагаемую линейную комбинацию с коэффициентами
+$\lambda^i_j$. Подстановка пары $(e_k,e^\ell)$ выделяет коэффициент по
+правилу
+\[
+  (e^i\otimes e_j)(e_k,e^\ell)
+  =e^i(e_k)e^\ell(e_j)=\delta^i_k\delta^\ell_j.
+\]
+Отсюда каждый $\lambda^i_j=0$.
+\end{example}
+
+
+Компоненты тензора в выбранном базисе находятся подстановкой базисных
+векторов и ковекторов. Например, для $T\in T_1^1(V)$
+\[
+  T=\sum_{i,j}T^i{}_j\,e^j\otimes e_i,
+\]
+и числа $T^i{}_j$ образуют матрицу. Для $T\in T_2^0(V)$ компоненты
+$T_{ij}$ также образуют квадратную матрицу.
+
+
+У тензора второго ранга встречаются четыре вида расположения индексов:
+\[
+  T^{ij}\in T_0^2(V),\qquad
+  T^i{}_j\in T_1^1(V),\qquad
+  T_i{}^j\in T_1^1(V),\qquad
+  T_{ij}\in T_2^0(V).
+\]
+Для тензора третьего ранга соответственно возможны компоненты
+\[
+  T^{ijk},\qquad T^{ij}{}_k,\qquad
+  T^i{}_{jk},\qquad T_{ijk},
+\]
+то есть тензоры типов $(0,3)$, $(1,2)$, $(2,1)$ и $(3,0)$.
+Аналогично записываются компоненты тензоров четвёртого и более высоких
+рангов: число нижних индексов равно первой валентности, число верхних ---
+второй.
+
+В матричном представлении сложению тензоров соответствует сложение
+матриц, а умножению тензора на скаляр --- умножение матрицы на этот
+скаляр.
+
+Для $\dim V=3$ компоненты тензоров типов $(1,1)$ и $(2,0)$ удобно
+записывать матрицами:
+\[
+  T\in T_1^1(V)\ \longleftrightarrow
+  \begin{pmatrix}
+    T^1{}_1&T^1{}_2&T^1{}_3\\
+    T^2{}_1&T^2{}_2&T^2{}_3\\
+    T^3{}_1&T^3{}_2&T^3{}_3
+  \end{pmatrix},
+  \qquad
+  T\in T_2^0(V)\ \longleftrightarrow
+  \begin{pmatrix}
+    T_{11}&T_{12}&T_{13}\\
+    T_{21}&T_{22}&T_{23}\\
+    T_{31}&T_{32}&T_{33}
+  \end{pmatrix}.
+\]
+
+Рассмотрим замену базиса. Пусть
+\[
+  \widetilde e_j=\sum_i e_i C^i{}_j,
+\]
+то есть столбцы матрицы $C$ состоят из координат нового базиса в старом.
+Тогда для любого $x\in V$
+\[
+  [x]_e=C[x]_{\widetilde e},
+  \qquad
+  [x]_{\widetilde e}=C^{-1}[x]_e,
+\]
+а сопряжённый базис преобразуется по закону
+\[
+  \widetilde e^{\,i}=\sum_k(C^{-1})^i{}_k e^k.
+\]
+
+
+Пусть $T\in T_1^1(V)$ и $A=(T^i{}_j)$ --- матрица его компонент в
+базисе $e$. В новом базисе
+\[
+  \widetilde T^{\,i}{}_{j}
+  =\sum_{k,\ell}(C^{-1})^i{}_k T^k{}_{\ell}C^{\ell}{}_j,
+\]
+или в матричной записи
+\[
+  \widetilde A=C^{-1}AC.
+\]
+
+\begin{definition}
+Формула, выражающая компоненты тензора в новом базисе через его
+компоненты в старом, называется \emph{тензорным законом преобразования
+координат}. В общем случае каждый нижний индекс преобразуется матрицей
+$C$, а каждый верхний --- матрицей $C^{-1}$.
+\end{definition}
+
+
+\begin{definition}
+Тензор называется \emph{инвариантным}, если он имеет одинаковые
+компоненты во всех тензорных базисах.
+\end{definition}
+
+Существует естественный изоморфизм
+\[
+  \operatorname{End}(V)\cong T_1^1(V).
+\]
+Линейному оператору $A\colon V\to V$ соответствует тензор
+\[
+  T(v,\omega)=\omega(Av),
+  \qquad v\in V,\quad \omega\in V^*.
+\]
+Действительно, если
+\[
+  Ae_j=\sum_i e_i a^i{}_j,
+\]
+то
+\[
+  T(e_j,e^i)=e^i(Ae_j)=a^i{}_j.
+\]
+Следовательно,
+\[
+  T_1^1(V)\cong M_n(F)\cong\operatorname{End}(V).
+\]
+
+Соответствия удобно свести в двунаправленную схему:
+\[
+  T_1^1(V)
+  \underset{T\longmapsto(a^i{}_j)}{\stackrel{\sim}{\longleftrightarrow}}
+  M_n(F)
+  \underset{A\longmapsto(a^i{}_j)}{\stackrel{\sim}{\longleftrightarrow}}
+  \operatorname{End}(V).
+\]
+
+\section{Симметрические и кососимметрические тензоры}
+
+Тензор $T\in T_p^0(V)$ называется \emph{симметрическим}, если для любой
+перестановки $\sigma\in S_p$
+\[
+  T(x_{\sigma(1)},\ldots,x_{\sigma(p)})
+  =T(x_1,\ldots,x_p).
+\]
+Он называется \emph{кососимметрическим} (альтернированным), если
+\[
+  T(x_{\sigma(1)},\ldots,x_{\sigma(p)})
+  =\sgn(\sigma)T(x_1,\ldots,x_p).
+\]
+
+
+Пусть $\operatorname{char}F=0$. Для $T\in T_p^0(V)$ определяются
+симметризация и альтернирование:
+\[
+  \operatorname{Sym}T(x_1,\ldots,x_p)
+  =\frac1{p!}\sum_{\sigma\in S_p}
+  T(x_{\sigma(1)},\ldots,x_{\sigma(p)}),
+\]
+\[
+  \operatorname{Alt}T(x_1,\ldots,x_p)
+  =\frac1{p!}\sum_{\sigma\in S_p}\sgn(\sigma)
+  T(x_{\sigma(1)},\ldots,x_{\sigma(p)}).
+\]
+Операторы $\operatorname{Sym}$ и $\operatorname{Alt}$ линейны и
+идемпотентны:
+\[
+  \operatorname{Sym}^2=\operatorname{Sym},
+  \qquad
+  \operatorname{Alt}^2=\operatorname{Alt}.
+\]
+
+\begin{proof}
+Линейность следует из линейности суммы. При повторной симметризации
+каждая перестановка аргументов возникает ровно $p!$ раз, поэтому второй
+множитель $1/p!$ сокращает число повторений и
+$\operatorname{Sym}^2=\operatorname{Sym}$. Для альтернирования
+используется дополнительно
+$\sgn(\sigma\tau)=\sgn(\sigma)\sgn(\tau)$; после перегруппировки суммы
+каждое слагаемое снова появляется $p!$ раз с требуемым знаком.
+\end{proof}
+Если $T$ симметричен, то
+$\operatorname{Sym}T=T$ и $\operatorname{Alt}T=0$; если $T$
+кососимметричен, то
+$\operatorname{Alt}T=T$ и $\operatorname{Sym}T=0$. Поэтому образы этих
+операторов состоят соответственно из симметрических и кососимметрических
+тензоров.
+
+\begin{editorialnote}
+Равенства $\operatorname{Alt}T=0$ для симметрического $T$ и
+$\operatorname{Sym}T=0$ для кососимметрического $T$ требуют $p\ge2$
+(и делимости на $p!$, обеспеченной условием
+$\operatorname{char}F=0$). При $p=1$ оба оператора совпадают с
+тождественным.
+\end{editorialnote}
+
+Симметрическое произведение симметрических тензоров $T$ и $S$ задаётся
+формулой
+\[
+  T\odot S=\operatorname{Sym}(T\otimes S).
+\]
+Симметризованные произведения элементов сопряжённого базиса образуют
+базис пространства симметрических тензоров степени $p$. Если
+$n=\dim V$, то
+\[
+  \dim S^p(V^*)=\binom{n+p-1}{p}.
+\]
+
+\begin{explanation}
+Биномиальный коэффициент $\binom{n+p-1}{p}$ имеет комбинаторный смысл:
+это число способов распределить $p$ неразличимых множителей по $n$
+базисным ковекторам, то есть число мономов степени $p$ от $n$
+переменных.
+\end{explanation}
+
+
+\chapter*{Примеры групп}
+\addcontentsline{toc}{chapter}{Примеры групп}
+
+\begin{enumerate}
+  \item $V_4$ --- четверная группа Клейна.
+  \item $A_n$ --- знакопеременная группа, то есть группа чётных
+  перестановок.
+  \item Группа углов с операцией сложения углов.
+  \item Аддитивная группа векторов плоскости.
+  \item Группа параллельных переносов плоскости.
+  \item $\Z_n$ --- группа классов вычетов по модулю $n$.
+  \item $R_n$ и $C_n$ --- группы поворотов правильного $n$-угольника.
+  Обозначение второго семейства восстановлено как
+  \uncertain{$C_n$; графема допускает иное чтение}.
+  \item $D_n$ --- диэдральная группа всех симметрий правильного
+  $n$-угольника; $|R_n|=n$, $|D_n|=2n$.
+  \item $S_n$ --- группа всех перестановок $n$ элементов.
+  \item $\mu_n$ --- группа корней $n$-й степени из единицы:
+  \[
+    \mu_n=\left\{e^{2\pi i k/n}\mid k=0,\ldots,n-1\right\}
+    \cong\Z_n.
+  \]
+  \item Общая линейная группа
+  \[
+    GL_n(F)=\{A\in M_n(F)\mid\det A\ne0\}.
+  \]
+  \item Специальная линейная группа
+  \[
+    SL_n(F)=\{A\in M_n(F)\mid\det A=1\}
+    \trianglelefteq GL_n(F).
+  \]
+  \item $T_n(F)$ --- группа невырожденных верхнетреугольных матриц.
+  \item $UT_n(F)$ --- группа верхних унитреугольных матриц.
+  \item $D_n(F)$ --- группа невырожденных диагональных матриц.
+  \item $SO_n(\R)$ --- специальная ортогональная группа:
+  \[
+    SO_n(\R)=\{A\in M_n(\R)\mid A^{\mathsf T}A=E,\ \det A=1\}.
+  \]
+\end{enumerate}
+
+
+\appendix
+\chapter{Редакторские пометки}
+
+Большинство повреждённых промежуточных выкладок восстановлено по
+следующим за ними утверждениям и стандартным доказательствам. В основном
+тексте такие реконструкции не смешаны с авторскими формулировками:
+добавленные рассуждения находятся в окружениях «Доказательство» и
+«Пояснение».
+
+\begin{longtable}{@{}p{0.28\textwidth}p{0.64\textwidth}@{}}
+\toprule
+Место & Принятое редакторское решение \\
+\midrule
+\endfirsthead
+\toprule
+Место & Принятое редакторское решение \\
+\midrule
+\endhead
+Фундаментальная транспозиция &
+Повреждённый подсчёт числа соседних транспозиций восстановлен как
+$2(j-i)-1$. Это единственная формула, согласующаяся с изображённым
+разложением и нечётностью транспозиции. \\
+Критерий зависимости для модулей &
+Исходная формулировка сохранена, но добавлена оговорка: над общим кольцом
+она требует обратимости одного из коэффициентов. Безусловная версия
+доказана для векторных пространств над полем. \\
+Простой и неприводимый элементы &
+Отмечено различие стандартных определений. Их совпадение используется
+только после доказательства факториальности евклидова кольца. \\
+Подстановка в многочлен &
+Уточнено условие коммутативности кольца либо центральности подставляемого
+элемента. \\
+Симметризация и альтернирование &
+Уточнено, что взаимное зануление операторов для симметрических и
+кососимметрических тензоров предполагает $p\ge2$. \\
+Обозначение группы поворотов &
+Символ восстановлен как $C_n$, но чтение остаётся не вполне надёжным.
+Обычно $C_n$ обозначает циклическую группу поворотов, тогда как $R_n$ не
+является универсально принятым обозначением. \\
+\bottomrule
+\end{longtable}
+
+\begin{editorialnote}
+Полностью зачёркнутые слова, случайные пробы пера и неподписанные
+декоративные штрихи в учебный текст не включались. Там, где они могли
+скрывать математический переход, вместо догадки приведено самостоятельное
+доказательство соответствующего результата.
+\end{editorialnote}
+
+\end{document}

@@ -27,6 +27,8 @@ nav:
       - Обзор: math/index.md
       - Логика:
           - Полный конспект: math/logic/index.md
+      - Линал:
+          - Полный конспект: math/linal/index.md
 
   - Програ:
       - Обзор: programming/index.md
