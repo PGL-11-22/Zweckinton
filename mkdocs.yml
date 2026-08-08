@@ -9,6 +9,8 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.expand
+    - navigation.indexes
+    - navigation.path
     - navigation.top
     - navigation.instant
     - search.suggest
@@ -32,6 +34,11 @@ nav:
 
   - Програ:
       - Обзор: programming/index.md
+      - Операционные системы:
+          - Обзор: programming/os/index.md
+          - xv6:
+              - Путеводитель: programming/os/xv6/index.md
+              - План работы: programming/os/xv6/roadmap.md
 
   - Сети:
       - Обзор: network/index.md
@@ -56,6 +63,8 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
   - pymdownx.arithmatex:
       generic: true
