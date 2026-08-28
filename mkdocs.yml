@@ -5,6 +5,7 @@ site_author: Ямщиков Герман М3233
 theme:
   name: material
   language: ru
+
   features:
     - navigation.tabs
     - navigation.sections
@@ -13,9 +14,13 @@ theme:
     - navigation.path
     - navigation.top
     - navigation.instant
+
     - search.suggest
     - search.highlight
+
     - content.code.copy
+    - content.code.annotate
+    - content.tooltips
 
   palette:
     - scheme: slate
@@ -27,53 +32,130 @@ nav:
 
   - Математика:
       - Обзор: math/index.md
+
       - Логика:
           - Полный конспект: math/logic/index.md
+
       - Линал:
           - Полный конспект: math/linal/index.md
 
   - Програ:
       - Обзор: programming/index.md
+
       - Операционные системы:
           - Обзор: programming/os/index.md
+
           - xv6:
               - Путеводитель: programming/os/xv6/index.md
-              - План работы: programming/os/xv6/roadmap.md
 
   - Сети:
       - Обзор: network/index.md
 
-#   - Физика:
-#       - Обзор: physics/index.md
+  # - Физика:
+  #     - Обзор: physics/index.md
 
-#   - Алгоритмы:
-#       - Обзор: algo/index.md
+  # - Алгоритмы:
+  #     - Обзор: algo/index.md
+
+plugins:
+  - search
 
 markdown_extensions:
+  # ---------------------------------------------------------------------------
+  # Базовые расширения Python Markdown
+  # ---------------------------------------------------------------------------
+
   - admonition
+
   - attr_list
+
   - md_in_html
+
   - footnotes
+
   - tables
+
+  - abbr
+
+  - def_list
+
   - toc:
       permalink: true
 
-  - pymdownx.highlight
-  - pymdownx.superfences
+  # ---------------------------------------------------------------------------
+  # Код
+  # ---------------------------------------------------------------------------
+
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
+  - pymdownx.inlinehilite
+
+  - pymdownx.snippets
+
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+            # ---------------------------------------------------------------------------
+            # Сворачиваемые блоки / admonitions
+            # ---------------------------------------------------------------------------
+
+
   - pymdownx.details
+
+  # ---------------------------------------------------------------------------
+  # Вкладки
+  # ---------------------------------------------------------------------------
+
   - pymdownx.tabbed:
       alternate_style: true
+
+  # ---------------------------------------------------------------------------
+  # Task lists
+  # ---------------------------------------------------------------------------
+
   - pymdownx.tasklist:
       custom_checkbox: true
 
+  # ---------------------------------------------------------------------------
+  # Математика
+  # ---------------------------------------------------------------------------
+
   - pymdownx.arithmatex:
       generic: true
+
+  # ---------------------------------------------------------------------------
+  # Дополнительное форматирование
+  # ---------------------------------------------------------------------------
+
+  - pymdownx.betterem:
+      smart_enable: all
+
+  - pymdownx.caret
+
+  - pymdownx.mark
+
+  - pymdownx.tilde
+
+  - pymdownx.keys
+
+  - pymdownx.smartsymbols
+
+  # ---------------------------------------------------------------------------
+  # Emoji / Material icons
+  # ---------------------------------------------------------------------------
 
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra_javascript:
+  - javascripts/mathjax.js
+
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:

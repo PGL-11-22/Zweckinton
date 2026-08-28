@@ -4,20 +4,17 @@
 
 <div class="grid cards" markdown>
 
-- :material-map-marker-path: [**План работы**](roadmap.md)
 
-  ***
+- :material-power: [**Сборка - начало работы xv6**](intro.md)
 
-  Полная структура конспекта, Git-интенсив в начале, последовательный разбор xv6 и лабораторные case studies.
+- :fontawesome-solid-memory: [**Аллокация и виртуальная память**](allocXvm.md)
 
-- :material-source-repository: **Учебная база**
+- :material-swap-vertical: [**Системные вызовы**](syscal.md)
 
-  ***
+- :material-swap-horizontal: [**Прерывания и переключение контекста**](trapContext.md)
 
-  Чистый `mit-pdos/xv6-riscv` хранится отдельно в `OSI/xv6-study`; решения курса не изменяются.
+- :material-application-cog: [**Процессы и многозадачность**](sched.md)
+
+- :material-folder: [**Файловая система**](filsys.md)
 
 </div>
-
-!!! warning "Правило работы"
-
-    Мы не копируем готовые главы из README лабораторных. Каждую подсистему сначала проходим по исходному коду, затем формулируем своими словами и только потом сравниваем с вашими решениями.
